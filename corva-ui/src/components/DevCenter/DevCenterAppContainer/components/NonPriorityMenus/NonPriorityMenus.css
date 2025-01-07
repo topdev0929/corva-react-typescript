@@ -1,0 +1,17 @@
+.menuIcon {
+  padding: 0px !important;
+  margin-right: 4px !important;
+}
+
+.containerDropdownActionMaximize {
+  outline: none;
+}
+
+.iconButton {
+  padding: 6px !important;
+  color: var(--palette-primary-text-6) !important;
+}
+
+.iconButton:hover {
+  color: var(--palette-primary-text-1) !important;
+}

@@ -1,0 +1,82 @@
+<Meta title="Utils/Accuracy/getColorBySeverity" />
+
+# Accuracy Utils
+
+Accuracy Utils provide methods for severity calculation (with getting correspond colors that could be used in app UI).
+
+## getColorBySeverity
+
+Returns string value – HEX color depending on calculated severity. Is working for light and dark themes:
+
+- red: '#ff0000'
+- green: '#00ff00'
+- yellow: '#ffff00'
+- orange: '#ffa500'
+- white: '#ffffff'
+
+### Example
+
+Create an instance of Accuracy Utils:
+
+```javascript
+import AccuracyUtils from '~/utils/AccuracyUtils';
+const accuracyUtils = new AccuracyUtils();
+```
+
+Calculate severity:
+
+```javascript
+// severity is already passed as accuracy data
+accuracyUtils.getColorBySeverity({ severity: 'low' }, 1, 1, false)); // returns '#00ff00' (green)
+```
+
+```javascript
+// distance_to_plan is passed as accuracy data, severity is calculated by distance_to_plan, severeThreshold and moderateThreshold
+accuracyUtils.getColorBySeverity({ 'distance_to_plan': 42 }, 1, 1, false)); // returns '#ff0000' (red)
+```
+
+#### Parameters
+
+<div class="param">
+  <div class="code-block small">
+    <i>accuracyData: Object</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+AccuracyData Object should include:
+
+```javascript
+{
+  distance_to_plan: Number;
+}
+```
+
+or
+
+```javascript
+{
+  severity: String<"low" | "moderate" | "high">;
+}
+```
+
+<div class="param">
+  <div class="code-block small">
+    <i>severeThreshold: Number</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+<div class="param">
+  <div class="code-block small">
+    <i>moderateThreshold: Number</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+<div class="param">
+  <div class="code-block small">
+    <i>isLightTheme: boolean</i>
+  </div>
+  <div class="chip">Optional</div>
+</div>

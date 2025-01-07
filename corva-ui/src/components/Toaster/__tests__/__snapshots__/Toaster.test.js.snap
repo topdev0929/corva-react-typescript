@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toaster snapshots matches default snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="makeStyles-notificationContainer-1"
+    >
+      <div
+        class="makeStyles-notificationContent-2"
+      >
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root makeStyles-notificationIcon-3"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"
+          />
+        </svg>
+        <p
+          class="MuiTypography-root makeStyles-notificationLabel-4 MuiTypography-body1"
+        >
+          Toaster message
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+`;

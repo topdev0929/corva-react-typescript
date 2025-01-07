@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.labelContainer {
+  display: flex;
+  align-items: flex-end;
+  margin-right: 8px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--palette-primary-text-1);
+  margin: 0;
+}
+
+.units {
+  font-size: 12px;
+  margin: 0 0 0 1ch;
+  color: var(--palette-primary-text-7);
+  line-height: 18px;
+}
+
+.option {
+  display: flex;
+  align-items: flex-end;
+}
+
+.option .units {
+  line-height: 22px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid var(--palette-primary-text-6);
+}
+
+.triangle.isActive {
+  border-bottom: 5px solid var(--palette-primary-main);
+}
+
+.isVertical {
+  transform: rotate(-90deg);
+  min-height: 100px;
+  max-width: 22px;
+}
+
+.isVertical .label {
+  white-space: nowrap;
+}

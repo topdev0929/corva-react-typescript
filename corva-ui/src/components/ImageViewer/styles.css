@@ -1,0 +1,35 @@
+.cImageViewerToolbarButton {
+  vertical-align: middle;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cImageViewerToolbarButton:focus {
+  outline: none;
+}
+
+.cImageViewerToolbarIcon {
+  width: 42px !important;
+  height: 34px !important;
+  padding: 4px 6px;
+  opacity: 0.7;
+}
+
+.cImageViewerToolbarIcon:hover {
+  opacity: 1;
+}
+
+.cImageViewerToolbar {
+  top: 5px;
+  left: 5px;
+  color: #fff;
+  position: fixed;
+  z-index: 1501;
+}
+
+/* Hide Lightbox native close button */
+:global(.ril-toolbar__item .ril-close) {
+  display: none;
+}

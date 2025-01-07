@@ -1,0 +1,56 @@
+.cGoogleDocsViewer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cGoogleDocsViewerFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.cGoogleDocsViewerFrameHidden {
+  visibility: 0;
+  height: 0;
+}
+
+.cGoogleDocsViewerToolbarButton {
+  vertical-align: middle;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cGoogleDocsViewerToolbarButton:focus {
+  outline: none;
+}
+
+.cGoogleDocsViewerToolbarIcon {
+  width: 42px !important;
+  height: 34px !important;
+  padding: 4px 6px;
+}
+
+.cGoogleDocsViewerToolbarIcon:hover {
+  color: '#fff';
+}
+
+.cGoogleDocsViewerToolbar {
+  top: 5px;
+  left: 5px;
+  color: #fff;
+  position: fixed;
+  z-index: 1001;
+}
+
+.cGoogleDocsViewerToolbarBackButton {
+  display: flex;
+  align-items: center;
+}
+
+.cGoogleDocsViewerToolbarBackButtonFileName {
+  font-size: 1rem;
+  color: #fff;
+}

@@ -1,0 +1,133 @@
+.container {
+  position: relative;
+}
+
+.header {
+  height: 74px;
+  width: 100%;
+  background: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: background 0.3s ease-in;
+  position: relative;
+}
+
+.header:hover {
+  background: #333333;
+}
+
+.header.horizontal {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  width: 68px;
+  height: 100px;
+  border-left: 1px solid #333333;
+}
+
+.horizontal.minimal {
+  width: 38px;
+}
+
+.unit {
+  font-size: 11px;
+  color: #bdbdbd;
+  text-align: center;
+}
+
+.values {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.min,
+.max {
+  color: #9e9e9e;
+  font-size: 10px;
+}
+
+.current {
+  padding-right: 5px;
+  font-size: 16px;
+}
+
+.line {
+  border-width: 0;
+  position: relative;
+}
+
+.horizontal .line {
+  height: 40px;
+  width: 0;
+  left: -1px;
+  border-left: 1px solid #333333;
+}
+
+.horizontal .values {
+  border-width: 0 1px 0 0;
+  height: 100%;
+  padding: 10px 3px;
+}
+
+.vertical .line {
+  width: 40px;
+  height: 0;
+  top: -1px;
+  border-bottom: 1px solid #333333;
+}
+
+.vertical .values {
+  border-width: 0 0 1px 0;
+}
+
+.empty {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header:hover .empty {
+  visibility: visible;
+  opacity: 1;
+}
+
+.addTrace {
+  position: absolute;
+  background: #414141;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.horizontal .addTrace {
+  top: 50%;
+  left: -45px;
+  transform: translate(0, -50%);
+}
+
+.actions {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.modalTitle {
+  color: #fff;
+  font-size: 20px;
+}
+
+.trackTitle {
+  cursor: pointer;
+  color: #03bcd4;
+  font-size: 13px;
+}

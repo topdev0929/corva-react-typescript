@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--palette-primary-text-6);
+  margin-right: 2px;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--palette-primary-text-1);
+}

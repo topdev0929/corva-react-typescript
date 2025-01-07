@@ -1,0 +1,17 @@
+.appAnnotationFeedItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.appAnnotationFeedItemApp {
+  width: 628px;
+  height: 480px;
+  position: relative;
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.appAnnotationFeedItemAttachment {
+  padding-top: 10px;
+  width: 300px;
+}

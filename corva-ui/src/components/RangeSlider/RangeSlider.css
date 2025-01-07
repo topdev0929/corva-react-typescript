@@ -1,0 +1,190 @@
+.rangeSliderHorizontal {
+  /* mode values */
+  padding: 30px 0 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.rangeSliderVertical {
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rangeSliderRail {
+  position: relative;
+  height: 3px;
+  border-radius: 1px;
+  background-color: rgba(99, 239, 255, 0.24);
+}
+
+.rangeSliderRail::before,
+.rangeSliderRail::after {
+  content: '';
+  border-radius: 1px;
+  position: absolute;
+  opacity: 0.24;
+  width: 2px;
+  height: 3px;
+  background: #63efff;
+}
+
+.rangeSliderRail::before {
+  top: 0;
+  left: 0;
+}
+
+.rangeSliderRail::after {
+  top: 0;
+  right: 0;
+}
+
+.rangeSliderRailHorizontal {
+  width: 100%;
+  margin: 0 6px;
+}
+
+.rotatedVerticalRange {
+  transform: rotate(180deg);
+}
+
+.rangeSliderVertical .rangeSliderRail {
+  width: 3px;
+}
+
+.rangeSliderVertical .rangeSliderRail::before,
+.rangeSliderVertical .rangeSliderRail::after {
+  width: 3px;
+  height: 2px;
+}
+
+.rangeSliderVertical .rangeSliderRail::after {
+  bottom: 0 !important;
+  top: unset;
+}
+
+.rangeSliderRailVertical {
+  height: 100%;
+  width: 2px;
+  margin: 6px 0;
+}
+
+.rangeSliderBar {
+  position: absolute;
+  z-index: 1;
+}
+
+.rangeSliderBarHorizontal {
+  height: 12px;
+  margin: 1px 0 0;
+  transform: translate(0, -50%);
+}
+
+.rangeSliderBarVertical {
+  height: 100%;
+  width: 12px;
+  margin: 1px 0 0;
+}
+
+.rangeSliderBarView {
+  border-radius: 1px;
+  background: var(--palette-primary-main);
+}
+
+.rangeSliderBarViewHorizontal {
+  position: relative;
+  margin: 5px 0 0;
+  height: 3px;
+}
+
+.rangeSliderBarViewVertical {
+  width: 3px;
+  height: 100%;
+}
+
+.rangeSliderBar:hover > .rangeSliderBarViewVertical::before,
+.rangeSliderBar:hover > .rangeSliderBarViewHorizontal::before {
+  content: '';
+  border-radius: 1px;
+  position: absolute;
+  opacity: 0.4;
+  background: #03bcd4;
+}
+
+.rangeSliderBar:hover > .rangeSliderBarViewHorizontal::before {
+  width: 100%;
+  height: 7px;
+  bottom: -2px;
+}
+
+.rangeSliderBar:hover > .rangeSliderBarViewVertical::before {
+  height: 100%;
+  width: 7px;
+  left: -2px;
+}
+
+.rangeSliderThumb {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+.mobileRangeSliderThumb.rangeSliderThumb:hover > .rangeSliderLabel {
+  box-shadow: none !important;
+}
+
+.mobileRangeSliderThumb:hover.rangeSliderThumb::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 39px;
+  height: 39px;
+  border-radius: 20px;
+  opacity: 0.1;
+  background: #d9d9d9;
+}
+
+.rangeSliderLabel {
+  position: relative;
+  background: var(--palette-primary-main);
+  width: 9px;
+  height: 9px;
+  border-radius: 9px;
+  transition: box-shadow 0.3s;
+}
+
+.rangeSliderThumb:hover > .rangeSliderLabel {
+  box-shadow: rgba(3, 188, 212, 0.2) 0 0 0 8px;
+}
+
+.rangeSliderInputDivider {
+  background: var(--palette-background-b-9);
+  font-weight: 500;
+  font-size: 10px;
+  color: #fff;
+}
+
+.rangeSliderCompactInputs {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--palette-background-b-9);
+  transform: translate(-50%, -50%);
+}
+
+.disabled {
+  opacity: 0.4;
+}

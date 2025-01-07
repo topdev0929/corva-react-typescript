@@ -1,0 +1,29 @@
+.detailsPane header {
+  border-bottom: 1px solid #888;
+}
+
+.detailTitleGroup {
+  padding: 12px;
+}
+
+.detailTitle {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 0px;
+  color: #ccc;
+}
+
+.detailTitleSeparator {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.detailTitleMore {
+  font-size: 1.5rem;
+}
+
+.detailDone {
+  float: right;
+}

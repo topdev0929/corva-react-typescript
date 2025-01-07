@@ -1,0 +1,68 @@
+.bhaIndicator {
+  height: 20px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px 0;
+}
+.bhaIndicatorRight {
+  justify-content: flex-end;
+}
+.bhaIndicatorLeft {
+  justify-content: flex-start;
+}
+
+.bhaIndicator > div {
+  display: flex;
+  align-items: center;
+}
+.bhaIndicatorRight > div {
+  margin-left: 10px;
+}
+.bhaIndicatorLeft > div {
+  margin-right: 10px;
+}
+
+.bhaIndicatorColorBit {
+  width: 10px;
+  height: 10px;
+  background-color: #239FE6;
+}
+
+.bhaIndicatorColorRss {
+  width: 10px;
+  height: 10px;
+  background-color: #dd375e;
+}
+
+.bhaIndicatorColorPdm {
+  width: 10px;
+  height: 10px;
+  background-color: #C208DF;
+}
+
+.bhaIndicatorColorOther {
+  width: 10px;
+  height: 10px;
+  background-color: #8398A5;
+}
+
+.bhaIndicatorColorStabilizer {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+}
+
+.bhaIndicatorColorUr {
+  width: 10px;
+  height: 10px;
+  background-color: #44ff44;
+}
+
+.bhaIndicatorLabel {
+  font-size: 0.75rem;
+  margin-left: 5px;
+}
+
+.cDashboardReportAppLightTheme .bhaIndicatorLabel {
+  color: rgba(0, 0, 0, 0.54);
+}

@@ -1,0 +1,31 @@
+.cPDLiveBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: 1px solid #D32F2F;
+  border-radius: 4px;
+  width: 54px;
+  height: 28px;
+  padding: 3px 0px;
+  font-size: 14px;
+}
+
+.cPDLiveBadge span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #D32F2F;
+  margin-right: 3px;
+  animation: dotpulse 3s infinite;
+}
+
+@keyframes dotpulse {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

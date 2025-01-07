@@ -1,0 +1,55 @@
+.container {
+  background-color: #201f1f;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.container > div {
+  height: 100%;
+}
+
+.containerMaximized {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  width: auto;
+  height: auto;
+  z-index: 500;
+  box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+.containerMaximizedTransparent {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  z-index: 500;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.fixedSizeContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+:global(.dc-isolated-app__body-overflow) {
+  overflow: hidden;
+}
+
+.compensateScroll {
+  margin-right: 15px;
+}

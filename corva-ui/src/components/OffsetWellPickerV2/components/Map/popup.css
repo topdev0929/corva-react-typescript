@@ -1,0 +1,88 @@
+.popup {
+  color: #fff;
+  font-family: Roboto;
+}
+
+.wellColor {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.wellName {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140.6%;
+  color: #ffffff;
+}
+
+.popupInfo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  letter-spacing: 0.4px;
+  color: #bdbdbd;
+  margin: 4px;
+}
+
+.popupActions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.popupButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 4px;
+  user-select: none;
+  margin-right: 5px;
+  height: 36px;
+}
+
+.popupButton.popupButtonContained {
+  background-color: #03bcd4;
+}
+
+.poupupButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.popupButtonContained:hover {
+  background-color: #02acc1;
+}
+
+.popupButtonLabel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #03bcd4;
+}
+
+.popupButtonIcon {
+  position: relative;
+  width: 25px;
+  height: 16px;
+  color: #03bcd4;
+  margin: 4px 0;
+}
+
+.popupButtonContained .popupButtonLabel {
+  color: white;
+}
+
+.popupButtonIcon svg {
+  font-size: 18px;
+  line-height: 18px;
+}

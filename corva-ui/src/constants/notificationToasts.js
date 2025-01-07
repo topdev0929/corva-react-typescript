@@ -1,0 +1,4 @@
+export const NAME = 'notificationToasts';
+
+export const ADD_NOTIFICATION_TOAST = 'ADD_NOTIFICATION_TOAST';
+export const REMOVE_NOTIFICATION_TOAST = 'REMOVE_NOTIFICATION_TOAST';

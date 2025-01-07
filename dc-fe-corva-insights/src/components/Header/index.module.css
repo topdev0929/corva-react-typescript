@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-columns: auto max-content;
+  grid-template-rows: auto;
+}
+
+.right {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}

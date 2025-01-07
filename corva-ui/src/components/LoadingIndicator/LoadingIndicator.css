@@ -1,0 +1,33 @@
+.appLoading {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: table;
+  overflow: hidden;
+  position: absolute;
+}
+
+.appLoadingInline {
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  box-sizing: content-box;
+}
+
+.appLoadingGrid {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.appLoadingInner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  height: 80px;
+}
+
+.cLoader.cLoaderBlack {
+  filter: invert(1);
+}

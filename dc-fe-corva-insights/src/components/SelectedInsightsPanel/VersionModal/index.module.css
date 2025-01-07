@@ -1,0 +1,46 @@
+.container {
+  max-height: calc(100vh - 32px);
+}
+
+.modalContent {
+  padding: 0;
+  display: grid;
+  min-height: calc(100vh - 32px);
+  grid-template-columns: 100%;
+  grid-template-rows: 72px calc(100% - 150px) 78px;
+}
+
+.content {
+  height: 100%;
+  width: 1100px;
+  max-width: 100%;
+}
+
+.main {
+  padding: 16px 40px;
+}
+
+.header {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.headerMain {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 40px 40px 40px;
+}
+
+.gradientList {
+  background: linear-gradient(to top, rgba(65, 65, 65, 0) 0%, #414141 100%);
+}

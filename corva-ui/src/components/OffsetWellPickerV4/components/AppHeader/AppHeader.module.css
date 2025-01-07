@@ -1,0 +1,32 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.divideLine {
+  width: 1px;
+  height: 12px !important;
+  margin-left: 16px !important;
+  margin-right: 16px !important;
+}
+
+.totalLabel {
+  color: var(--palette-primary-text-6);
+}
+
+.selectedLabel {
+  color: var(--palette-primary-text-6);
+  padding-left: 16px;
+}
+
+.countValue {
+  padding-left: 4px;
+  color: var(--palette-primary-text-1);
+}
+
+.maxOffsetSize {
+  padding-left: 4px;
+  color: var(--palette-primary-text-6);
+  cursor: default;
+}

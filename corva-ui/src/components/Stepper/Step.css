@@ -1,0 +1,70 @@
+.step {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--palette-primary-text-6);
+  margin: 16px;
+}
+
+.stepCircle {
+  min-width: 32px;
+  font-weight: 500;
+  min-height: 32px;
+  border: 1px solid var(--palette-primary-text-6);
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.medium.step {
+  font-size: 14px;
+}
+
+.medium > .stepCircle {
+  height: 32px;
+  width: 32px;
+}
+
+.large.step {
+  font-size: 16px;
+}
+
+.large > .stepCircle {
+  font-size: 20px;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+}
+
+.step.active {
+  color: var(--palette-primary-contrast-text);
+}
+.active > .stepCircle {
+  background-color: var(--palette-primary-main);
+  border: none;
+}
+
+.checked > .stepCircle {
+  background: rgba(0, 139, 163, 0.6);
+  color: var(--palette-primary-contrast-text);
+  border: none;
+}
+
+.step.error {
+  color: #f44336;
+}
+
+.error > .stepCircle,
+.active.error > .stepCircle {
+  background-color: transparent;
+  border: 1px solid var(--palette-error-main);
+}
+
+.step.disabled,
+.disabled > .stepCircle {
+  border-color: var(--palette-primary-text-8);
+  color: var(--palette-primary-text-8);
+}

@@ -1,0 +1,33 @@
+<Meta title="Utils/Chart Series/smoothenSerie" />
+
+# Chart Series Utils
+
+Utils that provide methods for work with chart series.
+
+## smoothenSerie
+
+This function is created for smoothing echarts series, which have the following structure of data arg: [ [X,Y], [X1,Y1], ... [Xn,Yn] ]
+
+### Example
+
+```javascript
+import { smoothenSerie } from '~/utils/chartSeries';
+
+smoothenSerie([[1, 1], [3, 3], [7, 7], [10, 10]], 2)); // returns [[1, 1], [3, 3], [7, 7]]
+```
+
+#### Parameters
+
+<div class="param">
+  <div class="code-block small">
+    <i>data: Array of series</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+<div class="param">
+  <div class="code-block small">
+    <i>step: Number</i>
+  </div>
+  <div class="chip">Required</div>
+</div>

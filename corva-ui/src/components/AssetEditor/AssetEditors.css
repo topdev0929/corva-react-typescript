@@ -1,0 +1,18 @@
+.main {
+}
+
+.editor {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.editor button {
+  margin-left: 24px;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 16px 0;
+}

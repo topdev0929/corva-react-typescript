@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical {
+  flex: 1;
+}
+
+.horizontal {
+  height: 100px;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  margin-bottom: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #272727;
+  transition: background .3s ease-out;
+}
+
+.header:hover {
+  background: #333333;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+}
+
+.horizontal .header {
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  height: 100px;
+  width: 24px;
+}

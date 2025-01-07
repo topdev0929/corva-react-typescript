@@ -1,0 +1,76 @@
+.cComponentFilePreview {
+  display: flex;
+  padding: 2px 0;
+  margin-top: 10px;
+  margin-left: 48px;
+  background: #4d4d4d;
+  border-radius: 4px;
+  position: relative;
+  max-height: 300px;
+}
+
+.cComponentFilePreviewWrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+.cComponentFilePreview:hover .cComponentFilePreviewDeleteFile {
+  position: relative;
+  margin-left: 20px;
+  visibility: visible;
+}
+.cComponentFilePreviewDeleteFile {
+  position: absolute !important;
+  right: 8px;
+  top: 8px;
+  visibility: hidden;
+}
+.cComponentFilePreviewDeleteFileCentered {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.cComponentFilePreviewImageFileWrapper {
+  border-radius: 3px;
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.cComponentFilePreview:hover .cComponentFilePreviewImageFileWrapper,
+.cComponentFilePreview:hover .cComponentFilePreviewWrapper {
+  opacity: 0.7;
+}
+
+.cComponentFilePreviewImageFileWrapper:hover .cComponentFilePreviewDeleteFile {
+  visibility: visible;
+}
+.cComponentFilePreviewName {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 0px 0px;
+  align-items: center;
+}
+
+.cComponentFilePreviewImage {
+  vertical-align: top;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cComponentFilePreviewDownload {
+  width: 150px;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.cComponentFilePreviewDownloadText {
+  margin-left: 10px;
+  width: calc(100% - 60px); /* NOTE: Minus file icon width */
+  display: flex;
+  justify-content: space-between;
+}

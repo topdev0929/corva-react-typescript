@@ -1,0 +1,20 @@
+.title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--palette-primary-text-1);
+  margin: 0;
+}
+
+.depthIcon {
+  transform: rotate(0.25turn);
+}
+
+.depth {
+  margin-left: -4px;
+  margin-bottom: 12px;
+}
+
+.time {
+  margin-bottom: 12px;
+}

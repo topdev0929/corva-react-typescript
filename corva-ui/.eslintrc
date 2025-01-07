@@ -1,0 +1,25 @@
+{
+  "extends": "@corva/eslint-config-browser",
+  "rules": {
+    "react/prop-types": "off",
+    "react/jsx-no-bind": [
+      "error",
+      {
+        "allowArrowFunctions": true,
+        "allowFunctions": true
+      }
+    ],
+    "react/forbid-prop-types": "off",
+    "no-restricted-imports": [
+      "error",
+      {
+        "patterns": [
+          {
+            "group": ["@corva/ui"],
+            "message": "Please don't import @corva/ui inside of @corva/ui. Use local imports instead: ~/components"
+          }
+        ]
+      }
+    ]
+  }
+}

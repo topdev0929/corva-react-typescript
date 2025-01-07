@@ -1,0 +1,28 @@
+.cInfiniteList {
+  -webkit-overflow-scrolling: touch;
+}
+.cInfiniteListOverflow {
+  overflow: auto;
+}
+
+.cInfiniteListEmpty {
+  font-size: 1.3rem;
+  color: #999;
+  padding: 0 0 0 5px;
+}
+
+.cInfiniteListPeriod {
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+/* NOTE: Without headerComponent */
+.cInfiniteListPeriod:nth-child(1) {
+  margin-top: 0;
+}
+
+/* NOTE: With headerComponent */
+.cInfiniteListPeriod:nth-child(2) {
+  margin-top: 0;
+}

@@ -1,0 +1,43 @@
+{
+  "format": 1,
+  "license": {
+    "type": "MIT",
+    "url": "https://www.oandgexample.com/license/"
+  },
+  "developer": {
+    "name": "O&G Company",
+    "identifier": "oandgc",
+    "authors": []
+  },
+  "application": {
+    "type": "ui",
+    "key": "corva.shell_hypercare.ui",
+    "visibility": "private",
+    "name": "Hypercare",
+    "description": "This is the description of my app. You can do great things with it!",
+    "summary": "More information about this app goes here",
+    "category": "completionAnalytics",
+    "website": "https://www.oandgexample.com/my-app/",
+    "segments": ["drilling"],
+    "ui": {
+      "initial_size": {
+        "w": 4,
+        "h": 10
+      },
+      "multi_rig": false,
+      "full_screen_report": false
+    }
+  },
+  "settings": {
+    "entrypoint": {
+      "file": "src/index.js",
+      "function": "handler"
+    },
+    "environment": {},
+    "runtime": "ui",
+    "app": {
+      "log_type": "time"
+    }
+  },
+  "datasets": {}
+}

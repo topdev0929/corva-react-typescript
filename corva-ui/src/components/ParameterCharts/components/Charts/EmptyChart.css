@@ -1,0 +1,27 @@
+.container {
+  height: 100px;
+  background: #272727;
+  display: flex;
+  position: relative;
+  height: 100px;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.yAxis {
+  position: absolute;
+  height: 1px;
+  background: #414141;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
+}
+
+.xAxis {
+  border-right: 1px dashed #616161;
+}
+
+.xAxis:last-child {
+  border-left: 1px dashed #616161;
+}

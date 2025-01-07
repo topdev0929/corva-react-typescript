@@ -1,0 +1,109 @@
+<Meta title="Utils/sharedDCStore" />
+
+# sharedDCStore
+
+### Description
+
+An API that allows you to share the data between multiple DC apps. Allows to implement
+communication and synchronization between them.
+
+Main things to know:
+
+- shared store key is a UUID string to prevent possible names clashes. Use services like https://www.uuidgenerator.net/
+  to generate your store key once, store it to some variable with a meaningfull name and use across multiple apps
+- shared store exists for the duration of user session. On user logout - shared state will be cleared
+
+### API
+
+#### sharedDCStore.setSharedDCStore
+
+A function that sets new store value
+
+```typescript
+
+sharedDCStore.setSharedDCStore: (
+  // a valid UUID string
+  storeKey: string,
+
+  // a function that will be called to set a new store value
+  setterFunction: (currentStoreValue: any) => any
+) => void
+```
+
+#### sharedDCStore.subscribeForSharedDCStore
+
+A function that subscribes to the shared store updates. Returns unsubscribe function
+
+```typescript
+
+sharedDCStore.subscribeForSharedDCStore: (
+  // a valid UUID string
+  storeKey: string,
+
+  // a function that will be called whenever shared store's value is updated.
+  // Also the function will be called immediately the first time, to share the current value
+  subscribeFn: (newStoreValue: any) => void
+) => () => void // returns unsubscribe function
+```
+
+### Usage example
+
+```javascript
+import { useEffect, useState, useRef } from 'react';
+
+import { sharedDCStore } from '@corva/ui/utils';
+
+const sharedCounterStoreKey = '7c97c020-8a62-4cce-9e0c-414737124bfe';
+
+export function SharedDcStoreDemo() {
+  const [store, setStore] = useState(null);
+  const unsubFnRef = useRef();
+
+  function subscribeForStore() {
+    if (unsubFnRef.current) {
+      return;
+    }
+
+    const unsubscribeFn = sharedDCStore.subscribeForSharedDCStore(
+      sharedCounterStoreKey,
+      storeValue => {
+        setStore(storeValue);
+      }
+    );
+
+    unsubFnRef.current = unsubscribeFn;
+  }
+
+  function unsubscribeFromStore() {
+    unsubFnRef?.current();
+
+    unsubFnRef.current = null;
+  }
+
+  useEffect(() => {
+    subscribeForStore();
+
+    return unsubscribeFromStore;
+  }, []);
+
+  return (
+    <fieldset>
+      <legend>SharedDcStoreDemo</legend>
+      <h3>Current store value</h3>
+      <p style={{ fontSize: '2em' }}>{store && JSON.stringify(store, null, '  ')}</p>
+      <hr />
+      <button
+        onClick={() => {
+          sharedDCStore.setSharedDCStore(sharedCounterStoreKey, currentValue =>
+            currentValue ? currentValue + 1 : 1
+          );
+        }}
+      >
+        Increment store
+      </button>
+      <button onClick={unsubscribeFromStore}>unsubscribe from store</button>
+      <button onClick={subscribeForStore}>subscribe for store</button>
+    </fieldset>
+  );
+}
+```

@@ -1,0 +1,12 @@
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.deleteText {
+  color: var(--palette-primary-text-6);
+  font-weight: 400;
+  font-size: 16px;
+}

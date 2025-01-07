@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.label {
+  font-size: 14px;
+  margin: 0 0 0 4px;
+  color: var(--palette-primary-text-6);
+}
+
+.value {
+  font-size: 16px;
+  margin: 0 0 0 0.5ch;
+  color: var(--palette-primary-text-1);
+}
+
+.missing {
+  font-size: 16px;
+  margin: 0 0 0 0.5ch;
+  color:#F44336;
+}
+
+.unit {
+  font-size: 12px;
+  margin: 0 0 0 0.5ch;
+  color: var(--palette-primary-text-6);
+}

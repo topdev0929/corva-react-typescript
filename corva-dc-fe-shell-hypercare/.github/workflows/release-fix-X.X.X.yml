@@ -1,0 +1,17 @@
+name: release-fix/X.X.X branch flow
+on:
+  push:
+    branches:
+      - 'release-fix/[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  release-fix-flow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: release-fix/X.X.X flow
+        uses: corva-ai/gh-actions/shared-dc-workflows/release-fix-X.X.X@develop
+        with:
+          qa-api-key: ${{ secrets.API_KEY_QA }}
+          prod-api-key: ${{ secrets.API_KEY }}
+          prod-app-key: shell.hypercare.ui
+          npm-token: ${{ secrets.CORVA_NPM_TOKEN }}

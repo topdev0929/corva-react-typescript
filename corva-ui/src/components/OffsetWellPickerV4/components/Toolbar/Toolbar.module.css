@@ -1,0 +1,58 @@
+.controlGroup {
+  padding: 0px 40px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controlGroupSmall {
+  padding: 0px;
+  position: sticky;
+  left: 0px;
+  height: auto;
+  margin-top: 0px;
+}
+
+.controlGroupMobile {
+  padding: 0px;
+  padding-right: 16px;
+  position: sticky;
+  left: 0px;
+  margin-top: 0px;
+}
+
+.filterButton {
+  background-color: var(--palette-background-b-8) !important;
+  height: 32px !important;
+}
+
+.filterButton:hover {
+  background-color: var(--palette-background-b-7) !important;
+}
+
+.clearWrapper {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--palette-primary-main);
+}
+
+.clearWrapper:hover {
+  color: var(--palette-primary-light);
+}
+
+.clearIcon {
+  font-size: 16px !important;
+}
+
+.clearLabel {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: none;
+}

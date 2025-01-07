@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  height: 24px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  background-color: var(--palette-background-b-7);
+}
+
+.day {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--palette-primary-text-6);
+  background-color: var(--palette-background-b-5);
+}

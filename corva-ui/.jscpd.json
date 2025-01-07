@@ -1,0 +1,11 @@
+{
+  "threshold": 6.59,
+  "reporters": ["html", "console"],
+  "format": ["javascript", "css", "scss"],
+  "ignore": ["**.stories.js", "**.fixture.js"],
+  "output": "duplication-report",
+  "absolute": true,
+  "gitignore": true,
+  "minLines": 10,
+  "minTokens": 100
+}

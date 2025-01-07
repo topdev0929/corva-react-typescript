@@ -1,0 +1,60 @@
+.chartContent {
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+
+.noDataCotent {
+  height: calc(100% - 32px) !important;
+}
+
+.chartWrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chartContainer {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 118px);
+  flex: 1;
+}
+
+.legendContainer {
+  position: relative;
+  margin: 8px 0;
+}
+
+.phaseMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+}
+
+.phaseMenuItem {
+  height: 36px;
+  padding: 7px 16px;
+  background-color: var(--palette-background-b-9);
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--palette-primary-text-1);
+  cursor: default;
+}
+
+.phaseMenuItem:hover {
+  background-color: var(--palette-primary-text-9);
+}
+
+.errorActions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.errorContent {
+  width: 320px;
+  padding-bottom: 4px;
+  color: var(--palette-primary-text-6);
+}

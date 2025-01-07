@@ -1,0 +1,1880 @@
+{
+  "wits": [
+    {
+      "_id": "5f24d734741ad7449c46d590",
+      "data": {
+        "diff_press": 95.68771,
+        "hole_depth": 20254.71,
+        "hook_load": 180.4193,
+        "rop": 15.50688,
+        "rotary_rpm": 24,
+        "standpipe_pressure": 6236.982,
+        "rotary_torque": 1.50084,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.30063,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d73b741ad7470546d248",
+      "data": {
+        "diff_press": 95.65791,
+        "hole_depth": 20254.71,
+        "hook_load": 180.6412,
+        "rop": 15.90504,
+        "rotary_rpm": 24,
+        "standpipe_pressure": 6236.804,
+        "rotary_torque": 1.50084,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.18893,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d73b741ad7470546d249",
+      "data": {
+        "diff_press": 96.61449,
+        "hole_depth": 20254.72,
+        "hook_load": 180.7934,
+        "rop": 16.10386,
+        "rotary_rpm": 24,
+        "standpipe_pressure": 6237.892,
+        "rotary_torque": 1.50084,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 16.97284,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d73b741ad7470546d24a",
+      "data": {
+        "diff_press": 90.40939,
+        "hole_depth": 20254.72,
+        "hook_load": 180.9157,
+        "rop": 16.30267,
+        "rotary_rpm": 44,
+        "standpipe_pressure": 6231.145,
+        "rotary_torque": 1.50084,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.20369,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d73b741ad7470546d24b",
+      "data": {
+        "diff_press": 97.76276,
+        "hole_depth": 20254.73,
+        "hook_load": 180.8741,
+        "rop": 16.50148,
+        "rotary_rpm": 44,
+        "standpipe_pressure": 6239.181,
+        "rotary_torque": 1.50084,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.10414,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d73b741ad7470546d24c",
+      "data": {
+        "diff_press": 96.79121,
+        "hole_depth": 20254.73,
+        "hook_load": 180.9735,
+        "rop": 16.7003,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6237.326,
+        "rotary_torque": 1.50084,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.34953,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d73b586a48542f6d6c25",
+      "data": {
+        "diff_press": 94.54562,
+        "hole_depth": 20254.74,
+        "hook_load": 180.9533,
+        "rop": 17.09792,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6236.304,
+        "rotary_torque": 1.50084,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.24836,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d73c586a48542f6d6c2c",
+      "data": {
+        "diff_press": 97.38036,
+        "hole_depth": 20254.75,
+        "hook_load": 180.9035,
+        "rop": 17.49555,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6238.045,
+        "rotary_torque": 0.08738,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.42868,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d73d741ad7470546d250",
+      "data": {
+        "diff_press": 87.63651,
+        "hole_depth": 20254.75,
+        "hook_load": 180.9126,
+        "rop": 17.69436,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6229.299,
+        "rotary_torque": 0.08738,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.34421,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d73e586a48555b6d698f",
+      "data": {
+        "diff_press": 91.68637,
+        "hole_depth": 20254.76,
+        "hook_load": 180.6256,
+        "rop": 17.89318,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6233.216,
+        "rotary_torque": 2.63161,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.67713,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d73e586a48555b6d698e",
+      "data": {
+        "diff_press": 102.7892,
+        "hole_depth": 20254.76,
+        "hook_load": 180.7137,
+        "rop": 18.09199,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6243.865,
+        "rotary_torque": 2.63161,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.72151,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d742741ad7470546d25b",
+      "data": {
+        "diff_press": 98.43149,
+        "hole_depth": 20254.77,
+        "hook_load": 180.6803,
+        "rop": 18.49089,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6239.777,
+        "rotary_torque": 2.63161,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.62676,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d742741ad7470546d25c",
+      "data": {
+        "diff_press": 91.44741,
+        "hole_depth": 20254.77,
+        "hook_load": 180.4156,
+        "rop": 18.68971,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6232.383,
+        "rotary_torque": 2.63161,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.96082,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d742741ad7470546d25d",
+      "data": {
+        "diff_press": 102.0296,
+        "hole_depth": 20254.78,
+        "hook_load": 180.4129,
+        "rop": 18.88854,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6243.441,
+        "rotary_torque": 4.7184,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.8617,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d743741ad7470546d25f",
+      "data": {
+        "diff_press": 85.85923,
+        "hole_depth": 20254.79,
+        "hook_load": 180.255,
+        "rop": 19.2862,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6226.507,
+        "rotary_torque": 7.98736,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.09551,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d742741ad7470546d25e",
+      "data": {
+        "diff_press": 107.5306,
+        "hole_depth": 20254.79,
+        "hook_load": 180.3768,
+        "rop": 19.48502,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6249.086,
+        "rotary_torque": 4.7184,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.84909,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d749741ad7470546d269",
+      "data": {
+        "diff_press": 101.2864,
+        "hole_depth": 20254.8,
+        "hook_load": 180.0274,
+        "rop": 20.28103,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6241.424,
+        "rotary_torque": 9.53446,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.39165,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d744741ad7470546d265",
+      "data": {
+        "diff_press": 109.0114,
+        "hole_depth": 20254.8,
+        "hook_load": 180.1744,
+        "rop": 20.0815,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6251.063,
+        "rotary_torque": 7.98736,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.29729,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d749741ad7470546d26b",
+      "data": {
+        "diff_press": 100.3991,
+        "hole_depth": 20254.81,
+        "hook_load": 179.8792,
+        "rop": 20.28103,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6240.552,
+        "rotary_torque": 9.99705,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.64482,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d749741ad7470546d26a",
+      "data": {
+        "diff_press": 103.261,
+        "hole_depth": 20254.81,
+        "hook_load": 179.9687,
+        "rop": 20.0822,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6245.671,
+        "rotary_torque": 9.53446,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.61749,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d749741ad7470546d26c",
+      "data": {
+        "diff_press": 97.73325,
+        "hole_depth": 20254.82,
+        "hook_load": 179.6544,
+        "rop": 20.48057,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6240.009,
+        "rotary_torque": 9.99705,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.91856,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d74b586a48509e6d73f0",
+      "data": {
+        "diff_press": 88.13658,
+        "hole_depth": 20254.83,
+        "hook_load": 179.5561,
+        "rop": 20.68012,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6229.729,
+        "rotary_torque": 9.99705,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.10102,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d74a586a48555b6d69aa",
+      "data": {
+        "diff_press": 109.8204,
+        "hole_depth": 20254.83,
+        "hook_load": 179.6301,
+        "rop": 20.28243,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6250.222,
+        "rotary_torque": 9.99705,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.81623,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d74d586a48509e6d73f8",
+      "data": {
+        "diff_press": 86.72407,
+        "hole_depth": 20254.84,
+        "hook_load": 179.5265,
+        "rop": 20.48128,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6227.89,
+        "rotary_torque": 12.98845,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.30087,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d74c741ad7449c46d59d",
+      "data": {
+        "diff_press": 107.6781,
+        "hole_depth": 20254.84,
+        "hook_load": 179.5554,
+        "rop": 20.68012,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6248.626,
+        "rotary_torque": 12.98845,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.79865,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d74e741ad7449c46d59f",
+      "data": {
+        "diff_press": 117.0163,
+        "hole_depth": 20254.85,
+        "hook_load": 179.2697,
+        "rop": 20.68084,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6258.604,
+        "rotary_torque": 14.28884,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.19705,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d74f586a48509e6d73ff",
+      "data": {
+        "diff_press": 88.80389,
+        "hole_depth": 20254.85,
+        "hook_load": 179.2314,
+        "rop": 20.28243,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6229.184,
+        "rotary_torque": 14.28884,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.68927,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d750586a48509e6d7407",
+      "data": {
+        "diff_press": 115.9208,
+        "hole_depth": 20254.86,
+        "hook_load": 178.9789,
+        "rop": 20.28243,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6258.083,
+        "rotary_torque": 16.10321,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.59932,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d751741ad7470546d270",
+      "data": {
+        "diff_press": 93.0999,
+        "hole_depth": 20254.87,
+        "hook_load": 179.866,
+        "rop": 20.28173,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6233.016,
+        "rotary_torque": 16.10321,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.17131,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d751741ad7470546d26f",
+      "data": {
+        "diff_press": 91.61786,
+        "hole_depth": 20254.87,
+        "hook_load": 178.9789,
+        "rop": 20.48128,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6231.524,
+        "rotary_torque": 16.10321,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.82544,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d755741ad7470546d27d",
+      "data": {
+        "diff_press": 101.2549,
+        "hole_depth": 20254.88,
+        "hook_load": 180.2124,
+        "rop": 20.28173,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6244.173,
+        "rotary_torque": 16.10321,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.92423,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d755741ad7470546d27e",
+      "data": {
+        "diff_press": 93.17767,
+        "hole_depth": 20254.88,
+        "hook_load": 180.4949,
+        "rop": 20.48057,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6233.011,
+        "rotary_torque": 11.88852,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.55535,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d755741ad7470546d27f",
+      "data": {
+        "diff_press": 93.98548,
+        "hole_depth": 20254.89,
+        "hook_load": 180.4949,
+        "rop": 20.48057,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6236.814,
+        "rotary_torque": 11.88852,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.58315,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d756741ad7449c46d5a7",
+      "data": {
+        "diff_press": 97.91071,
+        "hole_depth": 20254.89,
+        "hook_load": 180.5609,
+        "rop": 20.67941,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6237.856,
+        "rotary_torque": 10.10498,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.40892,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d756741ad7449c46d5a8",
+      "data": {
+        "diff_press": 89.47279,
+        "hole_depth": 20254.9,
+        "hook_load": 180.8777,
+        "rop": 20.67941,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6231.86,
+        "rotary_torque": 10.10498,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.83006,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d757741ad7449c46d5ab",
+      "data": {
+        "diff_press": 102.2201,
+        "hole_depth": 20254.91,
+        "hook_load": 180.8809,
+        "rop": 20.48057,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6242.304,
+        "rotary_torque": 7.77662,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.57863,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d758586a48509e6d7412",
+      "data": {
+        "diff_press": 87.02628,
+        "hole_depth": 20254.91,
+        "hook_load": 180.9168,
+        "rop": 20.48057,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6228.361,
+        "rotary_torque": 7.77662,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.01011,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d759741ad7470546d281",
+      "data": {
+        "diff_press": 111.1518,
+        "hole_depth": 20254.92,
+        "hook_load": 180.9309,
+        "rop": 20.28173,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6252.047,
+        "rotary_torque": 6.32718,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.77285,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d75d586a48555b6d69b8",
+      "data": {
+        "diff_press": 83.68793,
+        "hole_depth": 20254.92,
+        "hook_load": 180.7153,
+        "rop": 20.28173,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6223.985,
+        "rotary_torque": 6.32718,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.96702,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d75e586a48555b6d69ba",
+      "data": {
+        "diff_press": 88.16266,
+        "hole_depth": 20254.93,
+        "hook_load": 180.6021,
+        "rop": 20.47986,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6228.211,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.15767,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d75d586a48555b6d69b9",
+      "data": {
+        "diff_press": 116.4876,
+        "hole_depth": 20254.93,
+        "hook_load": 180.7912,
+        "rop": 20.67941,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6258.691,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.04872,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d75e586a48555b6d69bb",
+      "data": {
+        "diff_press": 107.1022,
+        "hole_depth": 20254.94,
+        "hook_load": 180.4488,
+        "rop": 20.6787,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6250.221,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.57046,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d75e741ad7449c46d5b9",
+      "data": {
+        "diff_press": 92.61213,
+        "hole_depth": 20254.95,
+        "hook_load": 180.3127,
+        "rop": 20.6787,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6232.292,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.21255,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d75f741ad7449c46d5bb",
+      "data": {
+        "diff_press": 109.3552,
+        "hole_depth": 20254.95,
+        "hook_load": 180.2796,
+        "rop": 20.0822,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6252.428,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.56264,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d761741ad7449c46d5bf",
+      "data": {
+        "diff_press": 102.0965,
+        "hole_depth": 20254.96,
+        "hook_load": 180.1244,
+        "rop": 20.0822,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6241.943,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.49395,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d760586a48555b6d69be",
+      "data": {
+        "diff_press": 101.2307,
+        "hole_depth": 20254.96,
+        "hook_load": 180.2818,
+        "rop": 20.6787,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6244.308,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.59895,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d762741ad7470546d294",
+      "data": {
+        "diff_press": 93.48434,
+        "hole_depth": 20254.97,
+        "hook_load": 180.0891,
+        "rop": 20.28103,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6236.32,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.61615,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d763741ad7470546d295",
+      "data": {
+        "diff_press": 112.299,
+        "hole_depth": 20254.97,
+        "hook_load": 180.0217,
+        "rop": 20.47986,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6252.264,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.88512,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d765586a48542f6d6c3d",
+      "data": {
+        "diff_press": 119.3804,
+        "hole_depth": 20254.98,
+        "hook_load": 179.8363,
+        "rop": 20.27963,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6260.122,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.86941,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d764586a48555b6d69c2",
+      "data": {
+        "diff_press": 88.16637,
+        "hole_depth": 20254.98,
+        "hook_load": 179.8302,
+        "rop": 20.28033,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6230.24,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.80173,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d766586a48542f6d6c3f",
+      "data": {
+        "diff_press": 88.61988,
+        "hole_depth": 20254.99,
+        "hook_load": 179.5885,
+        "rop": 20.47845,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6229.731,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.17824,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d769741ad7495c46cc9c",
+      "data": {
+        "diff_press": 88.99258,
+        "hole_depth": 20255,
+        "hook_load": 179.1857,
+        "rop": 20.08081,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6229.165,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.34856,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d76b586a48542f6d6c49",
+      "data": {
+        "diff_press": 92.38776,
+        "hole_depth": 20255,
+        "hook_load": 179.0834,
+        "rop": 19.08671,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6232.444,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.26543,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d767586a48542f6d6c42",
+      "data": {
+        "diff_press": 115.7219,
+        "hole_depth": 20255,
+        "hook_load": 179.4924,
+        "rop": 20.27963,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6257.124,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.69059,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d76a586a48542f6d6c47",
+      "data": {
+        "diff_press": 117.904,
+        "hole_depth": 20255,
+        "hook_load": 179.0848,
+        "rop": 19.88199,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6260.333,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.39973,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d76c586a48542f6d6c4a",
+      "data": {
+        "diff_press": 104.4262,
+        "hole_depth": 20255,
+        "hook_load": 179.0429,
+        "rop": 18.68907,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6247.189,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.42735,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d76d741ad7495c46cc9d",
+      "data": {
+        "diff_press": 98.74834,
+        "hole_depth": 20255,
+        "hook_load": 179.0634,
+        "rop": 17.89379,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6238.71,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.41684,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d76e741ad7470546d2a2",
+      "data": {
+        "diff_press": 93.72517,
+        "hole_depth": 20255,
+        "hook_load": 179.306,
+        "rop": 17.09851,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6236.042,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.77432,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d76e741ad7470546d2a3",
+      "data": {
+        "diff_press": 101.9469,
+        "hole_depth": 20255.01,
+        "hook_load": 179.6767,
+        "rop": 17.29793,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6244.444,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.6035,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d76f586a48555b6d69d0",
+      "data": {
+        "diff_press": 110.3905,
+        "hole_depth": 20255.02,
+        "hook_load": 179.8675,
+        "rop": 17.29793,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6250.635,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.61592,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d770586a48542f6d6c4c",
+      "data": {
+        "diff_press": 89.3457,
+        "hole_depth": 20255.02,
+        "hook_load": 179.9667,
+        "rop": 17.0991,
+        "rotary_rpm": 5,
+        "standpipe_pressure": 6231.29,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.23596,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d779586a48509e6d7420",
+      "data": {
+        "diff_press": 90.87405,
+        "hole_depth": 20255.03,
+        "hook_load": 179.9785,
+        "rop": 16.90027,
+        "rotary_rpm": 44,
+        "standpipe_pressure": 6232.132,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.44753,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d771586a48555b6d69d2",
+      "data": {
+        "diff_press": 111.8148,
+        "hole_depth": 20255.03,
+        "hook_load": 180.0928,
+        "rop": 17.29793,
+        "rotary_rpm": 44,
+        "standpipe_pressure": 6252.324,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.46532,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d779586a48509e6d7422",
+      "data": {
+        "diff_press": 89.36324,
+        "hole_depth": 20255.04,
+        "hook_load": 179.7161,
+        "rop": 17.0991,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6230.315,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.72459,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d779586a48509e6d7421",
+      "data": {
+        "diff_press": 107.9233,
+        "hole_depth": 20255.04,
+        "hook_load": 179.9383,
+        "rop": 16.90027,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6249.357,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.49568,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d779586a48509e6d7423",
+      "data": {
+        "diff_press": 113.0377,
+        "hole_depth": 20255.05,
+        "hook_load": 179.5151,
+        "rop": 17.0991,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6255.024,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.87473,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d77a741ad7449c46d5c2",
+      "data": {
+        "diff_press": 90.66391,
+        "hole_depth": 20255.05,
+        "hook_load": 179.4516,
+        "rop": 17.0991,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6231.129,
+        "rotary_torque": 0.735,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.96104,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d77a741ad7449c46d5c3",
+      "data": {
+        "diff_press": 100.4511,
+        "hole_depth": 20255.06,
+        "hook_load": 179.3651,
+        "rop": 16.90027,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6242.455,
+        "rotary_torque": 1.6499,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.2287,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d77a741ad7449c46d5c4",
+      "data": {
+        "diff_press": 98.31559,
+        "hole_depth": 20255.06,
+        "hook_load": 179.2902,
+        "rop": 16.89969,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6238.379,
+        "rotary_torque": 1.6499,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.1877,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d77f741ad7449c46d5cb",
+      "data": {
+        "diff_press": 97.14771,
+        "hole_depth": 20255.07,
+        "hook_load": 178.4784,
+        "rop": 14.1167,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6238.597,
+        "rotary_torque": 7.45795,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.0247,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d787741ad7495c46ccbb",
+      "data": {
+        "diff_press": 94.78349,
+        "hole_depth": 20255.07,
+        "hook_load": 177.7405,
+        "rop": 9.22646,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6236.063,
+        "rotary_torque": 13.81083,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.65124,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d780741ad74a8c46cb55",
+      "data": {
+        "diff_press": 92.28358,
+        "hole_depth": 20255.07,
+        "hook_load": 178.3097,
+        "rop": 12.52609,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6233.498,
+        "rotary_torque": 8.94337,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.19253,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d788741ad7495c46ccbd",
+      "data": {
+        "diff_press": 102.163,
+        "hole_depth": 20255.07,
+        "hook_load": 177.6805,
+        "rop": 8.87161,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6243.321,
+        "rotary_torque": 13.81083,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.74465,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d786741ad7495c46ccb6",
+      "data": {
+        "diff_press": 90.33401,
+        "hole_depth": 20255.07,
+        "hook_load": 177.9117,
+        "rop": 8.74898,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6231.149,
+        "rotary_torque": 11.56471,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.40022,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d77c741ad7449c46d5c7",
+      "data": {
+        "diff_press": 92.50507,
+        "hole_depth": 20255.07,
+        "hook_load": 178.7837,
+        "rop": 15.90614,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6234.308,
+        "rotary_torque": 5.82861,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.73781,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d789741ad74a8c46cb63",
+      "data": {
+        "diff_press": 93.91647,
+        "hole_depth": 20255.07,
+        "hook_load": 177.6994,
+        "rop": 8.54305,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6235.22,
+        "rotary_torque": 16.17517,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.54533,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d784586a48555b6d69e1",
+      "data": {
+        "diff_press": 90.84324,
+        "hole_depth": 20255.07,
+        "hook_load": 177.9469,
+        "rop": 9.74318,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6231.654,
+        "rotary_torque": 10.58299,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.52609,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d77d586a4853876d6c9c",
+      "data": {
+        "diff_press": 96.14648,
+        "hole_depth": 20255.07,
+        "hook_load": 178.6167,
+        "rop": 15.50849,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6236.868,
+        "rotary_torque": 5.82861,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.92592,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d781741ad74a8c46cb61",
+      "data": {
+        "diff_press": 99.70135,
+        "hole_depth": 20255.07,
+        "hook_load": 178.1527,
+        "rop": 11.93002,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6241.339,
+        "rotary_torque": 8.94337,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.42341,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d78c586a48509e6d742a",
+      "data": {
+        "diff_press": 92.22373,
+        "hole_depth": 20255.07,
+        "hook_load": 178.0176,
+        "rop": 7.95389,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6233.54,
+        "rotary_torque": 16.17517,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.87875,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d77d586a4853876d6c9f",
+      "data": {
+        "diff_press": 103.136,
+        "hole_depth": 20255.07,
+        "hook_load": 178.5027,
+        "rop": 14.51435,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6243.993,
+        "rotary_torque": 7.45795,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.045,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d783586a48509e6d7428",
+      "data": {
+        "diff_press": 101.077,
+        "hole_depth": 20255.07,
+        "hook_load": 178.0649,
+        "rop": 10.3397,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6242.503,
+        "rotary_torque": 10.58299,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.36044,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d77a741ad7449c46d5c5",
+      "data": {
+        "diff_press": 100.8051,
+        "hole_depth": 20255.07,
+        "hook_load": 179.0923,
+        "rop": 16.70145,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6242.872,
+        "rotary_torque": 1.77326,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.79364,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d786741ad7495c46ccb5",
+      "data": {
+        "diff_press": 98.93903,
+        "hole_depth": 20255.07,
+        "hook_load": 177.8631,
+        "rop": 9.14666,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6240.313,
+        "rotary_torque": 11.56471,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.48343,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d77b586a48555b6d69d3",
+      "data": {
+        "diff_press": 96.76884,
+        "hole_depth": 20255.07,
+        "hook_load": 178.8007,
+        "rop": 16.70145,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6236.949,
+        "rotary_torque": 1.77326,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.96452,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d77f741ad7449c46d5d6",
+      "data": {
+        "diff_press": 104.4936,
+        "hole_depth": 20255.07,
+        "hook_load": 178.4188,
+        "rop": 13.32139,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6245.807,
+        "rotary_torque": 8.94337,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.02336,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d782586a48509e6d7427",
+      "data": {
+        "diff_press": 87.44427,
+        "hole_depth": 20255.07,
+        "hook_load": 178.2322,
+        "rop": 11.13507,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6228.292,
+        "rotary_torque": 8.94337,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.13665,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d78e586a48555b6d6a56",
+      "data": {
+        "diff_press": 86.73701,
+        "hole_depth": 20255.07,
+        "hook_load": 179.0208,
+        "rop": 6.56196,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6228.044,
+        "rotary_torque": 10.89652,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.95841,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d78a741ad7449c46d5db",
+      "data": {
+        "diff_press": 94.93718,
+        "hole_depth": 20255.07,
+        "hook_load": 178.0176,
+        "rop": 8.23795,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6236.281,
+        "rotary_torque": 16.17517,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 20.1102,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d78d586a48509e6d742c",
+      "data": {
+        "diff_press": 87.4102,
+        "hole_depth": 20255.07,
+        "hook_load": 178.2898,
+        "rop": 7.1585,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6228.834,
+        "rotary_torque": 16.17517,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.51281,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d78e741ad7449c46d5ef",
+      "data": {
+        "diff_press": 96.22977,
+        "hole_depth": 20255.08,
+        "hook_load": 179.3124,
+        "rop": 5.96542,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6237.47,
+        "rotary_torque": 10.89652,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.67479,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d790586a48555b6d6a57",
+      "data": {
+        "diff_press": 86.73196,
+        "hole_depth": 20255.08,
+        "hook_load": 179.3124,
+        "rop": 6.16427,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6227.701,
+        "rotary_torque": 11.2152,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.65687,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d791741ad7449c46d5f2",
+      "data": {
+        "diff_press": 97.66414,
+        "hole_depth": 20255.08,
+        "hook_load": 179.4025,
+        "rop": 5.76657,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6239.025,
+        "rotary_torque": 11.2152,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.82874,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d793586a4853876d6cb9",
+      "data": {
+        "diff_press": 94.39765,
+        "hole_depth": 20255.09,
+        "hook_load": 179.3546,
+        "rop": 5.36888,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6235.889,
+        "rotary_torque": 7.61729,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.11397,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d792741ad7495c46cccd",
+      "data": {
+        "diff_press": 85.1283,
+        "hole_depth": 20255.09,
+        "hook_load": 179.3491,
+        "rop": 5.56773,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6225.898,
+        "rotary_torque": 7.61729,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.86138,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d794586a48555b6d6a88",
+      "data": {
+        "diff_press": 86.50998,
+        "hole_depth": 20255.09,
+        "hook_load": 179.321,
+        "rop": 4.97118,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6227.093,
+        "rotary_torque": 4.93942,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.00431,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d796741ad7449c46d62b",
+      "data": {
+        "diff_press": 91.2113,
+        "hole_depth": 20255.1,
+        "hook_load": 179.3977,
+        "rop": 4.57365,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6232.082,
+        "rotary_torque": 3.71099,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.89369,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d795586a48509e6d7435",
+      "data": {
+        "diff_press": 93.89644,
+        "hole_depth": 20255.1,
+        "hook_load": 179.355,
+        "rop": 4.97118,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6235.679,
+        "rotary_torque": 4.93942,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.92681,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d798741ad74a8c46cc00",
+      "data": {
+        "diff_press": 90.91898,
+        "hole_depth": 20255.11,
+        "hook_load": 179.3453,
+        "rop": 4.37479,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6231.978,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.83325,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d798741ad74a8c46cc01",
+      "data": {
+        "diff_press": 83.44456,
+        "hole_depth": 20255.11,
+        "hook_load": 179.4548,
+        "rop": 12.6869,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6224.704,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.82379,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d797586a48542f6d6c55",
+      "data": {
+        "diff_press": 87.4925,
+        "hole_depth": 20255.11,
+        "hook_load": 179.3455,
+        "rop": 4.7725,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6229.174,
+        "rotary_torque": 3.71099,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.98485,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d79d586a48542f6d6c6e",
+      "data": {
+        "diff_press": 99.64922,
+        "hole_depth": 20255.12,
+        "hook_load": 179.5673,
+        "rop": 12.42074,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6241.307,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.5754,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d799741ad74a8c46cc03",
+      "data": {
+        "diff_press": 100.0673,
+        "hole_depth": 20255.12,
+        "hook_load": 179.5508,
+        "rop": 13.1063,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6241.358,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.68485,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d79d586a48542f6d6c6d",
+      "data": {
+        "diff_press": 90.40154,
+        "hole_depth": 20255.12,
+        "hook_load": 179.5549,
+        "rop": 12.97524,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6231.47,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.69409,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d79d586a48542f6d6c6f",
+      "data": {
+        "diff_press": 100.4342,
+        "hole_depth": 20255.13,
+        "hook_load": 179.5569,
+        "rop": 12.76928,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6241.879,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.95522,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d79e586a48555b6d6aa4",
+      "data": {
+        "diff_press": 94.33775,
+        "hole_depth": 20255.13,
+        "hook_load": 179.3856,
+        "rop": 12.25362,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6236.412,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.98876,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d79d586a48542f6d6c70",
+      "data": {
+        "diff_press": 85.65267,
+        "hole_depth": 20255.13,
+        "hook_load": 179.5575,
+        "rop": 12.68605,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6225.963,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.81347,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7a2741ad74a8c46cc1b",
+      "data": {
+        "diff_press": 90.94044,
+        "hole_depth": 20255.13,
+        "hook_load": 179.3801,
+        "rop": 12.55047,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6231.124,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.13149,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7a2741ad74a8c46cc1c",
+      "data": {
+        "diff_press": 88.7109,
+        "hole_depth": 20255.14,
+        "hook_load": 179.2995,
+        "rop": 12.49328,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6231.218,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.19806,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7a2741ad74a8c46cc1e",
+      "data": {
+        "diff_press": 84.71293,
+        "hole_depth": 20255.14,
+        "hook_load": 179.0361,
+        "rop": 12.3967,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6227.118,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.33977,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7a2741ad74a8c46cc1d",
+      "data": {
+        "diff_press": 93.04348,
+        "hole_depth": 20255.14,
+        "hook_load": 179.2352,
+        "rop": 12.44278,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6233.093,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.37596,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7a4586a48542f6d6c7d",
+      "data": {
+        "diff_press": 93.70622,
+        "hole_depth": 20255.15,
+        "hook_load": 178.876,
+        "rop": 12.08103,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6234.31,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.66447,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7a4586a4853876d6cc0",
+      "data": {
+        "diff_press": 81.69872,
+        "hole_depth": 20255.15,
+        "hook_load": 178.8474,
+        "rop": 12.31824,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6223.454,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.71416,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7a7586a48509e6d744d",
+      "data": {
+        "diff_press": 109.4268,
+        "hole_depth": 20255.15,
+        "hook_load": 178.8268,
+        "rop": 11.30152,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6250.886,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.94901,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7a5586a4853876d6ccb",
+      "data": {
+        "diff_press": 114.1706,
+        "hole_depth": 20255.15,
+        "hook_load": 178.7814,
+        "rop": 12.03343,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6254.975,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.73876,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7a7586a4853876d6cd3",
+      "data": {
+        "diff_press": 86.29693,
+        "hole_depth": 20255.15,
+        "hook_load": 178.6729,
+        "rop": 11.77235,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6227.283,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 19.60295,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7a9586a4853876d6cdb",
+      "data": {
+        "diff_press": 110.761,
+        "hole_depth": 20255.16,
+        "hook_load": 179.6503,
+        "rop": 11.3187,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6253.163,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.01768,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7a8741ad7449c46d63b",
+      "data": {
+        "diff_press": 100.2283,
+        "hole_depth": 20255.16,
+        "hook_load": 179.1678,
+        "rop": 11.08867,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6240.368,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.58623,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7ab741ad7495c46cd21",
+      "data": {
+        "diff_press": 104.3917,
+        "hole_depth": 20255.16,
+        "hook_load": 179.9194,
+        "rop": 11.12004,
+        "rotary_rpm": 4,
+        "standpipe_pressure": 6244.209,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.87388,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7af586a48509e6d7466",
+      "data": {
+        "diff_press": 129.4207,
+        "hole_depth": 20255.17,
+        "hook_load": 180.379,
+        "rop": 10.53782,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6272.323,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.9552,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7ae586a48509e6d7463",
+      "data": {
+        "diff_press": 127.4527,
+        "hole_depth": 20255.17,
+        "hook_load": 180.3504,
+        "rop": 10.73665,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6267.242,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.9954,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7ac741ad7495c46cd24",
+      "data": {
+        "diff_press": 117.0432,
+        "hole_depth": 20255.17,
+        "hook_load": 180.3244,
+        "rop": 10.93547,
+        "rotary_rpm": 41,
+        "standpipe_pressure": 6259.849,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.83088,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7ac586a48509e6d7459",
+      "data": {
+        "diff_press": 110.4139,
+        "hole_depth": 20255.17,
+        "hook_load": 180.2637,
+        "rop": 11.1343,
+        "rotary_rpm": 41,
+        "standpipe_pressure": 6250.397,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 17.83565,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7b2741ad7449c46d645",
+      "data": {
+        "diff_press": 135.8132,
+        "hole_depth": 20255.18,
+        "hook_load": 180.3141,
+        "rop": 10.13982,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6276.194,
+        "rotary_torque": 1.20273,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.18956,
+        "gamma_ray": 0
+      }
+    },
+    {
+      "_id": "5f24d7b1586a48509e6d746e",
+      "data": {
+        "diff_press": 111.9785,
+        "hole_depth": 20255.18,
+        "hook_load": 180.4464,
+        "rop": 10.53782,
+        "rotary_rpm": 45,
+        "standpipe_pressure": 6253.956,
+        "rotary_torque": 1.30039,
+        "mud_flow_in": 571.9363,
+        "weight_on_bit": 18.03767,
+        "gamma_ray": 0
+      }
+    }
+  ],
+  "drillingDysfunction": []
+}

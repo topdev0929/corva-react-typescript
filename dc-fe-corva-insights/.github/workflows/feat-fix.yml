@@ -1,0 +1,23 @@
+name: feat/fix branch flow
+on:
+  push:
+    branches:
+      - feat/*
+      - fix/*
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  feat-fix-flow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: feat/fix flow
+        uses: corva-ai/gh-actions/shared-dc-workflows/feat-fix@develop
+        with:
+          qa-api-key: ${{ secrets.API_KEY_QA }}
+          prod-api-key: ${{ secrets.API_KEY }}
+          npm-token: ${{ secrets.CORVA_NPM_TOKEN }}
+          jira-user-email: ${{ secrets.JIRA_AUTOTEST_USERNAME }}
+          jira-api-token: ${{ secrets.JIRA_AUTOTEST_API_TOKEN }}

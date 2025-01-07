@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 12px 0 48px 12px;
+  background-color: var(--palette-background-b-4);
+}
+
+/* fix @icon-park icons height to be equal to size */
+.container :global(.i-icon) {
+  display: flex;
+}
+
+.content {
+  height: 100%;
+  overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.appHeader div:nth-child(2) {
+  padding-right: 6px;
+}
+
+[class*='AppHeader_controlsContainer'] {
+  display: none;
+}
+
+[data-testid*='DevCenter_AppContainer_addAnnotation'] {
+  display: none;
+}

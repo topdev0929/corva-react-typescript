@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.list {
+  width: 100%;
+  height: 100%;
+  padding: 16px 0;
+}
+
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 16px;
+  background: linear-gradient(180deg, #212121 0%, rgba(33, 33, 33, 0) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.gradient.bottom {
+  top: auto;
+  bottom: 0;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}

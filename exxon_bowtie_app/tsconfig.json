@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/create-react-app/tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "strict": false,
+    "sourceMap": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "exclude": ["node_modules", "config-overrides.js", "config/jest", "src/index.js"]
+}

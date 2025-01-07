@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+.idea
+yarn-error.log
+dist/
+coverage
+.eslintcache
+webpack.config.js
+storybook/dist/
+duplication-report
+storybook-static
+.env

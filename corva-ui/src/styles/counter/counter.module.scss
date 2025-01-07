@@ -1,0 +1,71 @@
+.dotBadge {
+  background-color: var(--palette-primary-contrast-text);
+  border: 2px solid var(--palette-background-b-6);
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 10px !important;
+  top: 2px !important;
+  right: 2px !important;
+}
+
+.counterBadge {
+  color: var(--palette-background-b-6);
+  background-color: var(--palette-background-b-9);
+  border: 2px solid var(--palette-background-b-6);
+  border-radius: 50% !important;
+  &:hover {
+    background-color: var(--palette-background-b-7);
+    color: var(--palette-primary-contrast-text);
+  }
+}
+
+.counterBadge16 {
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  top: 2px !important;
+  right: 2px !important;
+  min-height: 16px !important;
+}
+
+.counterBadgeFixed16 {
+  padding: 2px 1.5px !important;
+}
+
+.counterBadgeLimited16 {
+  border-radius: 20px !important;
+  padding: 2px 3px !important;
+}
+
+.counterBadge24 {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  min-height: 24px !important;
+}
+
+.counterBadgeFixed24 {
+  padding: 6px 4px !important;
+}
+
+.counterBadgeLimited24 {
+  border-radius: 20px !important;
+  padding: 6px 6px !important;
+}
+
+.counterBadge32 {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  min-height: 32px !important;
+}
+
+.counterBadgeFixed32 {
+  padding: 10px 6.5px !important;
+}
+
+.counterBadgeLimited32 {
+  border-radius: 20px !important;
+  padding: 8px 10px !important;
+}
+
+.counterTooltip {
+  top: 8px !important;
+}

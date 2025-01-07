@@ -1,0 +1,66 @@
+.feedCreationTooltip {
+  position: absolute;
+}
+
+.feedCreationTooltipWrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.feedCreationTooltipHoverline {
+  height: 100%;
+  border-left: dotted 2px #ffffff;
+  position: absolute;
+  pointer-events: none;
+}
+
+.feedCreationTooltipHoverContent {
+  font-style: italic;
+  position: absolute;
+  background: rgba(20, 20, 20, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: 4px;
+  margin: 0 5px;
+}
+
+.feedsCreationHoverContentIcon {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.feedsCreationHoverContentTipText {
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.feedsCreationHoverAddText {
+  font-style: italic;
+  padding: 4px 8px;
+}
+
+.feedCreationTooltipHoverDatetimeContent {
+  position: absolute;
+  padding: 2px 4px;
+  background-color: rgba(97, 97, 97, 0.4);
+  border-radius: 1px;
+  height: 16px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+.feedCreationTooltipAvatarContainer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.feedCreationTooltipAvatar {
+  border: 1px solid #03bcd4;
+}

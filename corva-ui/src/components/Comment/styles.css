@@ -1,0 +1,19 @@
+.cComment {
+  display: flex;
+  align-items: flex-start;
+}
+
+.cCommentBody {
+  position: relative;
+}
+
+.cCommentNative .cCommentMenu button,
+.cComment:hover .cCommentMenu button {
+  visibility: visible;
+}
+
+.cCommentMenu {
+  position: absolute;
+  right: 8px;
+  top: -28px;
+}

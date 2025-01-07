@@ -1,0 +1,57 @@
+.layoutContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.layoutTopLarge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.layoutTopRightLarge {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+  width: auto;
+  overflow: hidden;
+}
+
+.layoutTopSmall {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: auto;
+  overflow: hidden;
+}
+
+.assetChips {
+  overflow: hidden;
+  display: flex;
+  justify-content: end;
+}
+
+.layoutBottomSmall {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 8px;
+}
+
+.layoutOffsetpicker {
+  display: flex;
+  align-items: center;
+}
+
+.layoutOffsetwellChipsLarge {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.layoutOffsetwellChipsSmall {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}

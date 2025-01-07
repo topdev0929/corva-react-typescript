@@ -1,0 +1,35 @@
+{
+  "format": 1,
+  "license": {
+    "type": "MIT",
+    "url": "https://www.oandgexample.com/license/"
+  },
+  "developer": {
+    "authors": []
+  },
+  "application": {
+    "type": "ui",
+    "key": "corva.treatment_plot.ui",
+    "visibility": "private",
+    "name": "Treatment Plot",
+    "subtitle": "Treatment Plot",
+    "category": "completionAsset",
+    "segments": ["completion"],
+    "ui": {
+      "initial_size": {
+        "w": 12,
+        "h": 16
+      },
+      "supportViewerMode": true
+    }
+  },
+  "settings": {
+    "entrypoint": {
+      "file": "src/index.js",
+      "function": "handler"
+    },
+    "environment": {},
+    "runtime": "ui"
+  },
+  "datasets": {}
+}

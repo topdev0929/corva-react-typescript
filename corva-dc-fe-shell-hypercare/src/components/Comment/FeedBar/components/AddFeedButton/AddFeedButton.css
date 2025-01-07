@@ -1,0 +1,47 @@
+.feedbarAddFeedButton {
+  --avatar-size: 32px;
+}
+
+.feedbarAddFeedButtonAvatarContainer {
+  position: relative;
+  cursor: pointer;
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  margin: 1px auto;
+}
+
+.feedbarAddFeedButtonAvatarContainer:hover .feedbarAddFeedButtonAvatar {
+  border: 1px solid #63efff;
+}
+
+.feedbarAddFeedButtonAvatarContainer:hover .feedbarAddFeedButton__add-icon {
+  color: #63efff;
+}
+
+.feedbarAddFeedButtonAvatar {
+  color: white;
+  border: 1px solid #808080;
+}
+
+.feedbarAddFeedButtonAddIconContainer {
+  position: absolute;
+  top: -4px;
+  right: -3px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.feedbarAddFeedButtonAddIconContainer.feedbarAddFeedButtonAddIconContainerHovered {
+  z-index: 0;
+}
+
+.feedbarAddFeedButtonAvatarContainer:hover
+  .feedbarAddFeedButtonAddIconContainer.feedbarAddFeedButtonAddIconContainerHovered {
+  z-index: 2;
+}
+
+.feedbarAddFeedButtonCloseButton {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  margin: 1px auto;
+}

@@ -1,0 +1,9 @@
+.switchControlTitle {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 8px;
+}
+
+.switchControlWithLabels {
+  display: flex;
+}

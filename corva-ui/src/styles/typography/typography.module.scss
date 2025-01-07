@@ -1,0 +1,36 @@
+$font-weights: (
+  regular: 400,
+  medium: 500,
+  bold: 700,
+);
+
+$font-size-line-height-map: (
+  10: 12,
+  11: 14,
+  12: 16,
+  14: 20,
+  16: 22,
+  18: 24,
+  20: 28,
+  24: 32,
+  32: 42,
+  36: 48,
+);
+
+// generates typography classes: regular10, medium14, bold32...
+@each $size, $height in $font-size-line-height-map {
+  @each $weight-name, $weight-value in $font-weights {
+    .#{$weight-name}#{$size} {
+      font-size: $size + px;
+      line-height: $height + px;
+      font-weight: $weight-value;
+      letter-spacing: 0;
+      color: var(--palette-primary-text-1);
+    }
+  }
+}
+
+.medium14Button {
+  @extend .medium14;
+  letter-spacing: 1px;
+}

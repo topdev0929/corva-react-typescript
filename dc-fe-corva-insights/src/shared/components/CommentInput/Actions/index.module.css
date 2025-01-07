@@ -1,0 +1,13 @@
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.sendAction {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--palette-primary-text-8);
+}

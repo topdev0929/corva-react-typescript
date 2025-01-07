@@ -1,0 +1,85 @@
+.comparisonHeader {
+  height: 26px;
+  border-bottom: 1px solid #5c5c5c;
+  border-top: 1px solid #5c5c5c;
+  color: #9e9e9e;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  font-family: Roboto;
+}
+
+.comparisonHeaderLightTheme {
+  color: #000000;
+}
+
+.comparisonHeader > div {
+  opacity: 1;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.comparisonNameCol {
+  flex: 2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  white-space: nowrap;
+  padding-left: 8px;
+}
+
+.comparisonSortIcon {
+  width: 20px;
+  text-align: right;
+}
+
+.comparisonDesignCol {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.comparisonActualCol {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.comparisonActualCol:last-child {
+  justify-content: flex-end;
+  padding-right: 8px;
+}
+
+.comparisonChartCol {
+  flex: 1.5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.comparisonRow,
+.comparisonHeader {
+  display: flex;
+}
+
+.comparisonRow {
+  height: 28px;
+  color: #ffffff;
+  border-bottom: solid 1px #5c5c5c;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.comparisonRowLightTheme {
+  color: #000000;
+}
+
+.comparisonRowLightTheme:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+.comparisonGreaterThanTenPercent {
+  color: #ff4a4a;
+}

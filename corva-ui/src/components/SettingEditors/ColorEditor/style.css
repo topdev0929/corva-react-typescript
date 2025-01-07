@@ -1,0 +1,10 @@
+.colorEditor {
+  position: relative;
+}
+
+.colorEditorPickerContainer {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

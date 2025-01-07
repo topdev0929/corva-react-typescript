@@ -1,0 +1,6 @@
+.paletteContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 16px);
+  gap: 2px;
+  width: 232px;
+}

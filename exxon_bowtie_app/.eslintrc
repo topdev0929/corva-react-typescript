@@ -1,0 +1,34 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeature": {
+      "jsx": true
+    }
+  },
+  "extends": ["@corva/eslint-config-browser"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["@corva/eslint-config-browser", "plugin:@typescript-eslint/recommended"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+        /* Turned off until adopted by @corva/eslint-config-browser */
+        "react/prop-types": 0,
+        "react/default-props-match-prop-types": 0,
+        "react/no-unused-prop-types": 0,
+        "react/require-default-props": 0,
+        /* Turned off until adopted by @corva/eslint-config-browser */
+        "prettier/prettier": [
+          "error",
+          {
+            "endOfLine": "auto"
+          }
+        ]
+      }
+    }
+  ]
+}

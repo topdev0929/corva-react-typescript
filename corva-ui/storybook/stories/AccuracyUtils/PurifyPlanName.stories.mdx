@@ -1,0 +1,33 @@
+<Meta title="Utils/Accuracy/purifyPlanName" />
+
+# Accuracy Utils
+
+Accuracy Utils provide methods for severity calculation (with getting correspond colors that could be used in app UI).
+
+## purifyPlanName
+
+Returns string – purified plan name
+
+### Example
+
+Create an instance of Accuracy Utils:
+
+```javascript
+import AccuracyUtils from '~/utils/AccuracyUtils';
+const accuracyUtils = new AccuracyUtils();
+```
+
+Call the method with plan name:
+
+```javascript
+accuracyUtils.purifyPlanName(`Plan name, Updated Target`); // returns 'Plan name'
+```
+
+#### Parameters
+
+<div class="param">
+  <div class="code-block small">
+    <i>planName: String</i>
+  </div>
+  <div class="chip">Required</div>
+</div>

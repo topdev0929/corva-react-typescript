@@ -1,0 +1,83 @@
+.bhaListContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.bhaList {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  padding: 0px 12px;
+}
+
+.bhaList::-webkit-scrollbar {
+  width: 14px;
+}
+
+.bhaList::-webkit-scrollbar-thumb {
+  background-color: rgba(164, 164, 167, 0.7215686274509804);
+  border-radius: 8px;
+  border: 4px solid rgba(0, 0, 0, 0.01);
+  background-clip: padding-box;
+}
+
+.bhaList::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.accordionRoot {
+  background-color: transparent !important;
+}
+
+.accordionSummaryRoot {
+  display: flex;
+  align-items: center;
+  padding: 16px 0px 12px !important;
+}
+
+.accordionSummaryContent {
+  display: flex;
+  align-items: center;
+}
+
+.counter {
+  margin-left: 8px;
+}
+
+.toggleIcon {
+  font-size: 16px;
+  color: var(--palette-primary-text-6);
+  margin-left: 20px;
+}
+
+.sectionContent {
+  width: 100%;
+}
+
+.tileWrapper {
+  margin-bottom: 8px;
+}
+
+.legendWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  width: calc(100% - 24px);
+  margin-left: 12px;
+}
+
+.bottomGradient {
+  position: absolute;
+  height: 16px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(39, 39, 39, 0) 0%, var(--palette-background-b-5) 100%);
+}
+
+.bottomGradientMobile {
+  background: linear-gradient(180deg, rgba(39, 39, 39, 0) 0%, var(--palette-background-b-4) 100%);
+}

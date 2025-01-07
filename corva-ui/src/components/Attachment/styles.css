@@ -1,0 +1,70 @@
+.cAttachmentFileWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.cAttachmentFileDownloadWrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.cAttachmentFileDownloadWrapperFileIcon {
+  margin-right: 10px;
+}
+
+.cAttachmentFileDownloadWrapperFileName {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 60px);
+}
+
+.cAttachmentFileDownloadWrapperForm {
+  margin-left: 5px;
+}
+
+.cAttachmentFileDownloadWrapper:hover {
+  background-color: #616161;
+}
+
+.cAttachmentReactPlayer video {
+  max-width: 500px; /* NOTE: Corresponds to file download wrapper max width */
+  background-color: #000000;
+}
+
+/* question here */
+.cAttachment :global(.react-player__preview) {
+  max-width: 500px; /* NOTE: Corresponds to file download wrapper max width */
+  height: 235px !important;
+  background-color: #eeeeee; /* NOTE: MUI grey200 */
+  border-radius: 3px;
+}
+
+.cAttachmentImg {
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.cAttachmentImgPreviwBtn {
+  display: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  background-color: rgba(97, 97, 97, 0.4);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.cAttachmentImg:hover {
+  opacity: 0.7;
+}
+
+.cAttachmentImg:hover .cAttachmentImgPreviwBtn {
+  display: flex;
+}

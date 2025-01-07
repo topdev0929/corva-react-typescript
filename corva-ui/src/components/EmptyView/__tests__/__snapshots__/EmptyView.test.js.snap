@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot EmptyAppView default 1`] = `
+<body>
+  <div>
+    <div
+      class="makeStyles-wrapper-1 makeStyles-wrapper-6"
+      data-testid="EmptyView_wrapper"
+    >
+      <p
+        class="MuiTypography-root makeStyles-title-3 MuiTypography-body1"
+      >
+        title
+      </p>
+      <p
+        class="MuiTypography-root makeStyles-description-4 MuiTypography-body1"
+      />
+      <img
+        alt="error state"
+        class="makeStyles-errorImage-2"
+        src="/static/media/5010eaf4520add4dcd713ce1fdbda5ea.png"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Snapshot EmptyAppView message 1`] = `
+<body>
+  <div>
+    <div
+      class="makeStyles-wrapper-13 makeStyles-wrapper-18"
+      data-testid="EmptyView_wrapper"
+    >
+      <p
+        class="MuiTypography-root makeStyles-title-15 MuiTypography-body1"
+      >
+        title
+      </p>
+      <p
+        class="MuiTypography-root makeStyles-description-16 MuiTypography-body1"
+      />
+      <img
+        alt="error state"
+        class="makeStyles-errorImage-14"
+        src="/static/media/5010eaf4520add4dcd713ce1fdbda5ea.png"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Snapshot EmptyAppView onRetry 1`] = `
+<body>
+  <div>
+    <div
+      class="makeStyles-wrapper-19 makeStyles-wrapper-24"
+      data-testid="EmptyView_wrapper"
+    >
+      <p
+        class="MuiTypography-root makeStyles-title-21 MuiTypography-body1"
+      >
+        title
+      </p>
+      <p
+        class="MuiTypography-root makeStyles-description-22 MuiTypography-body1"
+      />
+      <img
+        alt="error state"
+        class="makeStyles-errorImage-20"
+        src="/static/media/5010eaf4520add4dcd713ce1fdbda5ea.png"
+      />
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Snapshot EmptyAppView style 1`] = `
+<body>
+  <div>
+    <div
+      class="makeStyles-wrapper-7 makeStyles-wrapper-12"
+      data-testid="EmptyView_wrapper"
+    >
+      <p
+        class="MuiTypography-root makeStyles-title-9 MuiTypography-body1"
+      >
+        title
+      </p>
+      <p
+        class="MuiTypography-root makeStyles-description-10 MuiTypography-body1"
+      />
+      <img
+        alt="error state"
+        class="makeStyles-errorImage-8"
+        src="/static/media/5010eaf4520add4dcd713ce1fdbda5ea.png"
+      />
+    </div>
+  </div>
+</body>
+`;

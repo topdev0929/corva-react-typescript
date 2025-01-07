@@ -1,0 +1,15 @@
+.secondaryAsset {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.secondaryAssetColor {
+  color: white;
+  background-color: #ca6bd2;
+  stroke: white;
+}
+
+.secondaryAssetColor:hover {
+  background-color: #d981e0;
+}

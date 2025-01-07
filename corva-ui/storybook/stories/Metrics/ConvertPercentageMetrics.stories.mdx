@@ -1,0 +1,36 @@
+<Meta title="Utils/Metrics/convertPercentageMetrics" />
+
+# Convert Utils
+
+Util for work with metric values.
+
+## convertPercentageMetrics
+
+Rounds down all values between 100-101.50% to 100.00%
+
+### Example
+
+```javascript
+import { convertPercentageMetrics } from '~/utils/metrics';
+
+convertPercentageMetrics(0.4242, 4); // returns 42.42
+```
+
+#### Parameters
+
+<div class="param">
+  <div class="code-block small">
+    <i>value: Number</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+<div class="param">
+  <div class="code-block small">
+    <i>precision: Number</i>
+  </div>
+  <div class="chip">Optional</div>
+  <br />
+</div>
+
+<div class="param-description">Default value is 2.</div>

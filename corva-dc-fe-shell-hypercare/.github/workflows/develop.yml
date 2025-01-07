@@ -1,0 +1,28 @@
+name: develop branch flow
+on:
+  push:
+    branches:
+      - 'develop'
+
+jobs:
+  develop-flow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: develop branch flow
+        id: shared-workflow
+        uses: corva-ai/gh-actions/shared-dc-workflows/develop@develop
+        with:
+          qa-api-key: ${{ secrets.API_KEY_QA }}
+          prod-api-key: ${{ secrets.API_KEY }}
+          prod-app-key: shell.hypercare.ui
+          npm-token: ${{ secrets.CORVA_NPM_TOKEN }}
+          github-pr-approve-token: ${{ secrets.GH_ACTIONS_AUTOMATION }}
+          # github-pr-approve-token: ${{ secrets.GH_ACTIONS_AUTOMATION }}
+      # - name: trigger circle ci develop e2e tests
+      #   if: ${{ steps.shared-workflow.outputs.is-release-created }}
+      #   run: |
+      #     curl --request POST \
+      #       --url https://circleci.com/api/v2/project/gh/corva-ai/${{ github.event.repository.name }}/pipeline \
+      #       --header 'Circle-Token: ${{ secrets.CIRCLE_CI_API_TOKEN }}' \
+      #       --header 'content-type: application/json' \
+      #       --data '{"branch": "develop", "parameters":{"run_develop_e2e_tests_workflow":true,"app_repository_name":"${{ github.event.repository.name }}"}}'

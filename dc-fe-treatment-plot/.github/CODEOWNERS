@@ -1,0 +1,4 @@
+# These owners are the default owners for everything in
+# the repo. They're automatically added as reviwers 
+# to each pull request 
+* @corva-ai/front-end-completions

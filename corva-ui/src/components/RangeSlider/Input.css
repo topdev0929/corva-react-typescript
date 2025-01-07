@@ -1,0 +1,34 @@
+.rangeSliderInput {
+  cursor: default;
+  min-width: 40px;
+  height: 24px;
+  line-height: 24px;
+  background: var(--palette-background-b-6);
+  padding: 2px 4px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--palette-primary-text-6);
+  border: none;
+  outline: none;
+  display: block;
+  margin: 0 0 0 auto;
+  max-width: fit-content;
+  border: 1px solid var(--palette-primary-text-6);
+}
+
+.rangeSliderInput:focus {
+  color: var(--palette-primary-contrast-text);
+  border: 1px solid var(--palette-primary-main);
+  background-color: var(--palette-background-b-7);
+}
+
+.rangeSliderInput:hover {
+  color: var(--palette-primary-contrast-text);
+  border: 1px solid var(--palette-primary-main);
+}
+
+.rotated {
+  transform: rotate(180deg);
+}

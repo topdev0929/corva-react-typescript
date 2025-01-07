@@ -1,0 +1,8 @@
+.mapContainer {
+  margin-top: 24px;
+}
+
+.mapContainerHidden {
+  margin-top: 20px;
+  display: none;
+}

@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+}
+
+.action {
+  margin-right: 22px;
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: default;
+  pointer-events: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  min-width: 120px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}

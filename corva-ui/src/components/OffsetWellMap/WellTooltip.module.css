@@ -1,0 +1,85 @@
+.wellTooltip {
+  position: absolute;
+  width: fit-content;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--palette-primary-text-1);
+  font-family: 'Roboto';
+  font-style: normal;
+  background-color: var(--palette-background-b-8);
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.commonItem {
+  max-width: 300px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wellName {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  padding-bottom: 4px;
+}
+
+.tooltipItem {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.unit {
+  color: var(--palette-primary-text-6);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.formationItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.formation {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-right: 4px;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 8px;
+  gap: 4px;
+}
+
+.infoIcon {
+  font-size: 16px !important;
+  color: #64b5f6 !important;
+  position: relative !important;
+}
+
+.blockIcon {
+  font-size: 16px !important;
+  color: #dadada !important;
+  position: relative !important;
+}
+
+.infoLabel {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--palette-primary-text-6);
+}

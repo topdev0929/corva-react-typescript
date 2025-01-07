@@ -1,0 +1,159 @@
+.tableViewRoot {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.collapsedSummary {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding-left: 4px;
+}
+
+.expandIcon {
+    margin-top: 2px;
+    font-size: 24px !important;
+    padding: 0px !important;
+    color: var(--palette-primary-text-6);
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: transform 0.4s !important;
+}
+
+.expandIcon:hover {
+    color: var(--palette-primary-text-1);
+}
+
+.collapseIcon {
+    transform: rotate(0deg);
+}
+
+.summaryHeader {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--palette-primary-text-1);
+    padding-left: 12px;
+}
+
+.collapsedDetail {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100% - 40px);
+    transition: height 0.4s ease-in-out;
+}
+
+.collapsedDetailHidden {
+    height: 0;
+}
+
+.infoIcon {
+    color: var(--palette-primary-text-6);
+}
+
+.infoIcon:hover {
+    color: var(--palette-primary-text-1);
+}
+
+.filterPanel {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    padding: 12px 0 16px;
+}
+
+.selectFormControl { 
+    width: 164px;
+}
+
+.tableView::-webkit-scrollbar-track {
+    margin-top: 48px;
+}
+
+.searchRoot {
+    width: 100%;
+}
+
+.searchInput {
+    font-size: 16px !important;
+}
+  
+.searchInput:hover::before {
+    border-bottom: 2px solid var(--palette-primary-text-1) !important;
+}
+  
+.searchInput:hover .searchIcon {
+    color: var(--palette-primary-text-1) !important;
+}
+
+.searchInput:focus-within .searchIcon {
+    color: var(--palette-primary-main) !important;
+}
+
+.searchIcon {
+    color: var(--palette-primary-text-6) !important;
+    font-size: 24px !important;
+}
+
+.headerCell {
+    background-color: var(--palette-background-b-4) !important;
+    border-top: 1px solid var(--palette-primary-text-9);
+    padding: 6px 8px !important;
+}
+
+.tableRow td {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 6px 8px;
+}
+
+.eventNameCell {
+    width: 35%;
+    min-width: 300px;
+}
+
+.topShadow,
+.bottomShadow {
+    position: sticky;
+    z-index: 2;
+    border: 0 !important;
+    padding: 0 !important;
+    height: 0 !important;
+}
+
+.topShadow {
+    top: 48px;
+}
+  
+.bottomShadow {
+    bottom: 0;
+}
+
+.topShadow::after,
+.bottomShadow::after
+ {
+    content: ' ';
+    pointer-events: none;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.topShadow::after {
+    top: 0;
+    background: linear-gradient(0deg, rgba(33, 33, 33, 0.00) 0%, #212121 100%);
+}
+
+.bottomShadow::after {
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(33, 33, 33, 0.00) 0%, #212121 100%);
+}

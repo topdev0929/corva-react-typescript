@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 12px 12px 30px 12px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.filterContainer {
+  margin-bottom: 10px;
+}
+
+.filtersControls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appStatusBadgeWrapper {
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+}
+
+.actionContainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.calculatingLoading {
+  position: absolute;
+  width: calc(100% - 20px);
+  height: calc(100% - 50px);
+  top: 50px;
+  background: #201f1f;
+}

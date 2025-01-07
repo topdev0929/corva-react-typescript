@@ -1,0 +1,73 @@
+.tpChart {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.tpChartIcons {
+  position: absolute;
+}
+
+.tpChartIcon {
+  color: #BDBDBD;
+  cursor: pointer;
+  font-size: 16px !important;
+  margin: 4px;
+}
+
+.tpChartResetButton {
+  text-transform: none !important;
+  background-color: #272727 !important;
+  font-size: 12px !important;
+}
+
+.tpChartIconButton {
+  padding: 3px !important;
+}
+
+.tpChartIcon:hover {
+  color: #fff;
+}
+
+.showHideAxisIcon {
+  transform: rotate(-90deg);
+}
+
+.tpChartActiveIcon {
+  color: #fff !important;
+  font-size: 12px;
+}
+
+.tpChartTooltip {
+  font-size: 12px;
+}
+
+.tpChartTooltip__content.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 36px;
+}
+
+.tpChartTooltip__series-item span {
+  opacity: 0.6;
+}
+
+.tpChartTooltip__marker {
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 10px;
+  width: 9px;
+  height: 9px;
+}
+
+.tpChartTooltip__series-limit-message {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 5px;
+  left: 8px;
+}
+
+.tpChartTooltip__series-limit-message img {
+  margin-right: 4px;
+}

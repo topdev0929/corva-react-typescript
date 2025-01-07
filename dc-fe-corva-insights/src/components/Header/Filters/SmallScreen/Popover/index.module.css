@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-weight: 400;
+  margin: 0;
+  font-size: 20px;
+  color: var(--palette-primary-text-1);
+}

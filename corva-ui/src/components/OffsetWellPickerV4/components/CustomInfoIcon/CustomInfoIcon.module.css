@@ -1,0 +1,11 @@
+.infoWrapper {
+  margin-left: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.infoIcon {
+  font-size: 20px !important;
+  color: var(--palette-info-light);
+}

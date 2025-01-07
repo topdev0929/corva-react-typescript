@@ -1,0 +1,109 @@
+<Meta title="Utils/Convert/convertArray" />
+
+# Convert Utils
+
+Convert Utils is a tool for metric data convertioning.
+
+## convertArray
+
+Converts a property in a simple array of js objects or arrays.
+
+### Example
+
+```javascript
+import { convertArray } from '~/utils/convert';
+convertArray([{ value: 100 }, { value: 200 }], 'value', 'length', 'ft'); // returns [{value: 30.48}, {value: 60.96}] (m)
+```
+
+#### Parameters
+
+<div class="param">
+  <div class="code-block small">
+    <i>iterable: Array</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+The array of iterables containing values that need to be converted.
+
+<div class="param">
+  <div class="code-block small">
+    <i>key: String</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+The key in each sub-element that need to be converted.
+
+<div class="param">
+  <div class="code-block small">
+    <i>unitType: String</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+The class of unit (see the table below).
+
+<div class="param">
+  <div class="code-block small">
+    <i>from: String</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+The specific unit:
+
+| class of unit           |  unit  |
+| ----------------------- | :----: |
+| oilFlowRate             | m3/min |
+| massFlowRate            | kg/min |
+| shortLength             |   mm   |
+| msePressure             |  kPa   |
+| power                   |  watt  |
+| pressure                |  kPa   |
+| chemVolumeConcentration |  l/m3  |
+| length                  |   m    |
+| speed                   |  m/h   |
+| fluidVelocity           | m/min  |
+| volumeFlowRate          | m3/min |
+| density                 | kg/m3  |
+| torque                  |   Nm   |
+| force                   |  kdaN  |
+| chemMassConcentration   | kg/m3  |
+| area                    |   m2   |
+| time                    |  min   |
+| revolutionPerVolume     |  rpl   |
+| massPerLength           |  kg-m  |
+| system                  | metric |
+| anglePerLength          | dp30m  |
+| oil                     |   m3   |
+| angle                   |  deg   |
+| temperature             |   C    |
+| mass                    |   kg   |
+| pressureGradient        | kPa/m  |
+| inversePressure         |  i-pa  |
+| yp                      |   Pa   |
+| current                 |   mA   |
+| massConcentration       |  kg/m  |
+| volume                  |   m3   |
+| lengthPerAngle          | mm/rev |
+| velocity                |  m/h   |
+| voltage                 |   mV   |
+
+<div class="param">
+  <div class="code-block small">
+    <i>to: String</i>
+  </div>
+  <div class="chip">Optional</div>
+</div>
+
+The unit that the value will be converted to.
+
+<div class="param">
+  <div class="code-block small">
+    <i>precision: Number</i>
+  </div>
+  <div class="chip">Optional</div>
+</div>
+
+To round to the value. By default is 2.

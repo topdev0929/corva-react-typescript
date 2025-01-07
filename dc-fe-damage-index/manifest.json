@@ -1,0 +1,39 @@
+{
+  "format": 1,
+  "license": {
+    "type": "MIT",
+    "url": "https://www.oandgexample.com/license/"
+  },
+  "developer": {
+    "name": "O&G Company",
+    "identifier": "oandgc",
+    "authors": []
+  },
+  "application": {
+    "type": "ui",
+    "key": "trinity.damage_index.ui",
+    "visibility": "private",
+    "name": "Damage Index",
+    "description": "This is the description of my app. You can do great things with it!",
+    "summary": "More information about this app goes here",
+    "category": "analytics",
+    "website": "https://www.oandgexample.com/my-app/",
+    "segments": ["drilling"],
+    "ui": {
+      "initial_size": {
+        "w": 4,
+        "h": 10
+      }
+    }
+  },
+  "settings": {
+    "entrypoint": {
+      "file": "src/index.js",
+      "function": "handler"
+    },
+    "environment": {},
+    "runtime": "ui",
+    "app": {}
+  },
+  "datasets": {}
+}

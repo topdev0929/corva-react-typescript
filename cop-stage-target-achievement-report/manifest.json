@@ -1,0 +1,43 @@
+{
+  "format": 1,
+  "license": {
+    "type": "MIT",
+    "url": "https://www.oandgexample.com/license/"
+  },
+  "developer": {
+    "name": "O&G Company",
+    "identifier": "oandgc",
+    "authors": []
+  },
+  "application": {
+    "type": "ui",
+    "key": "corva.stage_target_achievement_report.ui",
+    "visibility": "private",
+    "name": "Stage Target Achievement Report",
+    "description": "This is the description of my app. You can do great things with it!",
+    "summary": "More information about this app goes here",
+    "category": "analytics",
+    "website": "https://www.oandgexample.com/my-app/",
+    "segments": ["completion"],
+    "ui": {
+      "initial_size": {
+        "w": 7,
+        "h": 16
+      },
+      "multi_rig": false,
+      "full_screen_report": false
+    }
+  },
+  "settings": {
+    "entrypoint": {
+      "file": "src/index.js",
+      "function": "handler"
+    },
+    "environment": {},
+    "runtime": "ui",
+    "app": {
+      "log_type": "time"
+    }
+  },
+  "datasets": {}
+}

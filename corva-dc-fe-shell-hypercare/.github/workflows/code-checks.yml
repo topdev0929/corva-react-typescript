@@ -1,0 +1,16 @@
+name: Code Checks
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  Lint-and-Test:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: 'Lint and test'
+        uses: corva-ai/gh-actions/shared-dc-workflows/lint-and-test@develop
+        with:
+          npm-token: ${{ secrets.CORVA_NPM_TOKEN }}

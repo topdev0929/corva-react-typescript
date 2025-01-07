@@ -1,0 +1,31 @@
+.containerRestoreAction {
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #ffffff;
+}
+
+.containerRestoreIconNative {
+  color: #fff;
+  font-size: 30;
+  height: 32;
+  width: 32;
+  text-align: center;
+}
+
+.containerRestoreActionNative {
+  right: 5;
+}
+
+.containerRestoreIcon {
+  color: #fff;
+}
+
+.iconButton {
+  padding: 0 !important;
+}
+
+.iconButton:hover {
+  background-color: inherit !important;
+}

@@ -1,0 +1,47 @@
+.cPostPreviewDialogMessageAdditionalFieldsWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cPostPreviewDialogMessageActionFields {
+    display: flex;
+    align-items: center;
+}
+
+.cPostPreviewDialogFileName {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 0px 0px;
+    align-items: center;
+}
+
+.cPostPreviewDialogFileImageFileWrapper {
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    background-color: #4d4d4d;
+}
+
+.cPostPreviewDialogFileImage {
+    vertical-align: top;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.cPostPreviewDialogFileDownload {
+    margin-top: 10px;
+    padding: 10px 10px 10px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.cPostPreviewDialogFileDownloadText {
+    margin-left: 10px;
+    width: calc(100% - 60px); /* NOTE: Minus file icon width */
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,465 @@
+version: 2.1
+
+executors:
+  docker:
+    docker:
+      - image: cimg/node:16.18.0
+  machine:
+    machine:
+      image: ubuntu-2204:2022.04.2
+
+orbs:
+  aws-s3: circleci/aws-s3@1.0.16
+  aws-cli: circleci/aws-cli@3.1.1
+  queue: eddiewebb/queue@1.5.0
+
+commands:
+  s3_setup_bucket:
+    steps:
+      - aws-cli/install
+      - deploy:
+          name: Create and setup new S3 bucket
+          command: |
+            export APP_S3_BUCKET=${CIRCLE_BRANCH//\//-}
+            export APP_S3_BUCKET=$(echo ${APP_S3_BUCKET} | tr '[:upper:]' '[:lower:]')
+            export APP_S3_BUCKET=app-ui-$APP_S3_BUCKET
+
+            if echo $(aws s3api head-bucket --bucket "${APP_S3_BUCKET}" 2>&1) | grep -q '404'; then aws s3api create-bucket --bucket ${APP_S3_BUCKET} --region us-east-1; fi
+
+            aws s3api wait bucket-exists --bucket ${APP_S3_BUCKET}
+            aws s3api put-public-access-block --bucket ${APP_S3_BUCKET} --public-access-block-configuration 'RestrictPublicBuckets=false,BlockPublicPolicy=false,BlockPublicAcls=false,IgnorePublicAcls=false'
+            aws s3api put-bucket-website --bucket ${APP_S3_BUCKET} --website-configuration file://config/bucket.website.config.json
+            sed -i -e s/'<BRANCH_S3_BUCKET>'/${APP_S3_BUCKET}/g config/bucket.website.policy.json
+            aws s3api put-bucket-policy --bucket ${APP_S3_BUCKET} --policy file://config/bucket.website.policy.json
+  s3_setup_site:
+    parameters:
+      s3_bucket_name:
+        type: string
+        default: $APP_S3_BUCKET
+    steps:
+      - run:
+          name: S3 site setup
+          command: |
+            export APP_S3_BUCKET=${CIRCLE_BRANCH//\//-}
+            export APP_S3_BUCKET=$(echo ${APP_S3_BUCKET} | tr '[:upper:]' '[:lower:]')
+            export APP_S3_BUCKET=app-ui-$APP_S3_BUCKET
+
+            aws s3api copy-object --copy-source << parameters.s3_bucket_name >>/index.html --bucket << parameters.s3_bucket_name >> --key index.html --metadata-directive REPLACE --cache-control "no-cache, no-store, must-revalidate" --content-type "text/html"
+
+jobs:
+  check-duplications:
+    executor:
+      name: docker
+    steps:
+      - checkout
+      - run:
+          name: Check duplications
+          command: npx jscpd src
+      - store_artifacts:
+          path: ./duplication-report/html
+  build-ui:
+    resource_class: medium+
+    executor:
+      name: docker
+    environment:
+      - JEST_JUNIT_OUTPUT_DIR: reports/junit/
+      - JEST_JUNIT_OUTPUT_NAME: junit.xml
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}-{{ .Branch }}
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install
+      - save_cache:
+          paths:
+            - ./node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}-{{ .Branch }}
+      - run: yarn lint
+#      - run: yarn test --runInBand
+      - run: yarn build
+      - store_test_results:
+          path: ./reports/junit/
+      - store_artifacts:
+          path: ./reports/junit
+      - persist_to_workspace:
+          root: .
+          paths:
+            - dist/*
+
+  build-corva:
+    executor:
+      name: docker
+    resource_class: xlarge
+    parameters:
+      corva_app_branch:
+        type: string
+        default: develop
+      react_app_environment:
+        type: string
+      react_app_api_url:
+        type: string
+      react_app_subscriptions_url:
+        type: string
+      react_app_auth0_domain:
+        type: string
+      react_app_auth0_client_id:
+        type: string
+      react_app_auth0_audience:
+        type: string
+      react_app_auth0_redirect_uri:
+        type: string
+        default: http://${APP_S3_BUCKET}.s3-website-us-east-1.amazonaws.com/login/oauth-callback
+      is_run_unit_tests:
+        type: boolean
+        default: false
+    environment:
+      - REACT_APP_ENVIRONMENT: <<parameters.react_app_environment>>
+      - REACT_APP_API_URL: <<parameters.react_app_api_url>>
+      - REACT_APP_SUBSCRIPTIONS_URL: <<parameters.react_app_subscriptions_url>>
+      - REACT_APP_AUTH0_DOMAIN: << parameters.react_app_auth0_domain >>
+      - REACT_APP_AUTH0_CLIENT_ID: <<parameters.react_app_auth0_client_id>>
+      - REACT_APP_AUTH0_AUDIENCE: <<parameters.react_app_auth0_audience>>
+      - JEST_JUNIT_OUTPUT_DIR: reports/junit/
+      - JEST_JUNIT_OUTPUT_NAME: junit.xml
+    steps:
+      - run: mkdir ~/.ssh && ssh-keyscan -H github.com >> ~/.ssh/known_hosts
+      - run: git clone --branch << parameters.corva_app_branch >> git@github.com:corva-ai/corva-web-frontend.git .
+      - attach_workspace:
+          at: .
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}-{{ .Branch }}
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install Dependencies
+          command: yarn install
+      - save_cache:
+          paths:
+            - ./node_modules
+          key: v1-dependencies-{{ checksum "yarn.lock" }}-{{ .Branch }}
+      - run: yarn add file:./dist
+      - run: yarn install
+#      - when:
+#          condition:
+#            equal: [true, << parameters.is_run_unit_tests >>]
+#          steps:
+#            - run: yarn test --runInBand
+      - run:
+          name: Building package
+          command: |
+            export APP_S3_BUCKET=${CIRCLE_BRANCH//\//-}
+            export APP_S3_BUCKET=$(echo ${APP_S3_BUCKET} | tr '[:upper:]' '[:lower:]')
+            export APP_S3_BUCKET=app-ui-$APP_S3_BUCKET
+            export REACT_APP_AUTH0_REDIRECT_URI=<< parameters.react_app_auth0_redirect_uri >>
+
+            yarn build
+          no_output_timeout: 30m
+      - store_test_results:
+          path: ./reports/junit/
+      - store_artifacts:
+          path: ./reports/junit
+      - persist_to_workspace:
+          root: .
+          paths:
+            - build/*
+            - config/bucket.website.config.json
+            - config/bucket.website.policy.json
+      - run:
+          name: Site URL
+          command: |
+            export APP_S3_BUCKET=${CIRCLE_BRANCH//\//-}
+            export APP_S3_BUCKET=$(echo ${APP_S3_BUCKET} | tr '[:upper:]' '[:lower:]')
+            export APP_S3_BUCKET=app-ui-$APP_S3_BUCKET
+
+            echo
+            echo http://${APP_S3_BUCKET}.s3-website-us-east-1.amazonaws.com/
+            echo
+            echo
+
+  deploy-corva-with-ui:
+    executor: docker
+    parameters:
+      s3_bucket_name:
+        type: string
+        default: $APP_S3_BUCKET
+    steps:
+      - queue/until_front_of_line:
+          block-workflow: true
+          time: '120'
+      - attach_workspace:
+          at: .
+      - s3_setup_bucket
+      - aws-cli/setup:
+          aws-region: AWS_REGION
+          aws-access-key-id: AWS_ACCESS_KEY_ID
+          aws-secret-access-key: AWS_SECRET_ACCESS_KEY
+      - run:
+          name: Syncing files to S3
+          command: |
+            export APP_S3_BUCKET=${CIRCLE_BRANCH//\//-}
+            export APP_S3_BUCKET=$(echo ${APP_S3_BUCKET} | tr '[:upper:]' '[:lower:]')
+            export APP_S3_BUCKET=app-ui-$APP_S3_BUCKET
+
+            aws s3 sync --delete build/ s3://<< parameters.s3_bucket_name >>
+      - s3_setup_site:
+          s3_bucket_name: << parameters.s3_bucket_name >>
+
+  publish-ui:
+    executor:
+      name: docker
+    # Note: was bumped to medium+ to avoid out-of-memory errors, like this one
+    # https://app.circleci.com/pipelines/github/corva-ai/corva-ui/7052/workflows/32ed7776-3efc-45e7-ba66-cf0dd06b28d0/jobs/20101
+    # remove this comment when the issue is resolved
+    resource_class: medium+
+    parameters:
+      tag:
+        type: string
+        default: ''
+      is_run_build_command:
+        type: boolean
+        default: true
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - when:
+          condition:
+            equal: [true, << parameters.is_run_build_command >>]
+          steps:
+            - restore_cache:
+                keys:
+                  - v1-dependencies-{{ checksum "yarn.lock" }}-{{ .Branch }}
+                  - v1-dependencies-{{ checksum "yarn.lock" }}
+            - run:
+                name: Install Dependencies
+                command: yarn install --frozen-lockfile
+            - save_cache:
+                paths:
+                  - ./node_modules
+                key: v1-dependencies-{{ checksum "yarn.lock" }}-{{ .Branch }}
+            - run:
+                name: Build
+                command: yarn build
+      - run:
+          name: Publish to NPM & GitHub
+          command: |
+            cd ./dist
+            echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+            ../.circleci/npm-gh-publish.sh "<< parameters.tag >> --access public"
+
+  deploy-storybook:
+    resource_class: medium+
+    executor:
+      name: docker
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn build-storybook
+      - run:
+          command: |
+            echo "$CIRCLE_BUILD_NUM" > storybook-static/build.info
+            echo "$CIRCLE_SHA1" >> storybook-static/build.info
+      - run: sudo apt update && sudo apt install python3-venv python-is-python3
+      - aws-s3/sync:
+          from: 'storybook-static/'
+          to: 's3://storybook.dev.corva.ai/'
+          arguments: '--delete'
+
+      - run: aws cloudfront wait invalidation-completed --distribution-id E1HGDAUDB5F3EC --id $(aws cloudfront create-invalidation --distribution-id E1HGDAUDB5F3EC --path "/*" | jq -r .Invalidation.Id )
+
+workflows:
+  corva-ui-feature-fix:
+    jobs:
+      - build-ui:
+          name: build-ui-branch
+          filters:
+            branches:
+              only: /(feature|feat|fix)\/.+/
+      - check-duplications:
+          filters:
+            branches:
+              only: /(feature|feat|fix)\/.+/
+      - build-corva:
+          name: build-corva-branch
+          react_app_environment: qa
+          react_app_api_url: https://api.qa.corva.ai
+          react_app_subscriptions_url: https://subscriptions.qa.corva.ai
+          react_app_auth0_domain: corva.auth0.com
+          react_app_auth0_client_id: 5I678Ng65mK3dbsArSoHklJuUTEpOcvl
+          react_app_auth0_audience: https://api.qa.corva.ai/v1
+          is_run_unit_tests: true
+          requires:
+            - build-ui-branch
+          filters:
+            branches:
+              only: /(feature|feat|fix)\/.+/
+
+      - deploy-corva-with-ui:
+          name: deploy-corva-with-ui-branch
+          context: aws-production
+          requires:
+            - build-corva-branch
+          filters:
+            branches:
+              only: /(feature|feat|fix)\/.+/
+
+  corva-ui-release-fix:
+    jobs:
+      - build-ui:
+          name: build-ui-branch
+          filters:
+            branches:
+              only: /(release-fix)\/.+/
+
+      - build-corva:
+          name: build-corva-branch
+          corva_app_branch: develop
+          react_app_environment: qa
+          react_app_api_url: https://api.qa.corva.ai
+          react_app_subscriptions_url: https://subscriptions.qa.corva.ai
+          react_app_auth0_domain: corva.auth0.com
+          react_app_auth0_client_id: 5I678Ng65mK3dbsArSoHklJuUTEpOcvl
+          react_app_auth0_audience: https://api.qa.corva.ai/v1
+          requires:
+            - build-ui-branch
+          filters:
+            branches:
+              only: /(release-fix)\/.+/
+
+      - deploy-corva-with-ui:
+          name: deploy-corva-with-ui-branch
+          context: aws-production
+          requires:
+            - build-corva-branch
+          filters:
+            branches:
+              only: /(release-fix)\/.+/
+
+  corva-ui-hot-fix:
+    jobs:
+      - build-ui:
+          name: build-ui-branch
+          filters:
+            branches:
+              only: /(hot-fix)\/.+/
+
+      - build-corva:
+          name: build-corva-branch
+          corva_app_branch: production
+          react_app_environment: qa
+          react_app_api_url: https://api.qa.corva.ai
+          react_app_subscriptions_url: https://subscriptions.qa.corva.ai
+          react_app_auth0_domain: corva.auth0.com
+          react_app_auth0_client_id: 5I678Ng65mK3dbsArSoHklJuUTEpOcvl
+          react_app_auth0_audience: https://api.qa.corva.ai/v1
+          requires:
+            - build-ui-branch
+          filters:
+            branches:
+              only: /(hot-fix)\/.+/
+
+      - deploy-corva-with-ui:
+          name: deploy-corva-with-ui-branch
+          context: aws-production
+          requires:
+            - build-corva-branch
+          filters:
+            branches:
+              only: /(hot-fix)\/.+/
+
+  corva-ui-dev:
+    jobs:
+      - build-ui:
+          filters:
+            branches:
+              only: develop
+
+      # - build-corva:
+      #     react_app_environment: qa
+      #     react_app_api_url: https://api.qa.corva.ai
+      #     react_app_subscriptions_url: https://subscriptions.qa.corva.ai
+      #     react_app_auth0_domain: corva.auth0.com
+      #     react_app_auth0_client_id: 5I678Ng65mK3dbsArSoHklJuUTEpOcvl
+      #     react_app_auth0_audience: https://api.qa.corva.ai/v1
+      #     requires:
+      #       - build-ui
+      #     filters:
+      #       branches:
+      #         only: develop
+
+      # - deploy-corva-with-ui:
+      #     context: aws-production
+      #     requires:
+      #       - build-corva
+      #     filters:
+      #       branches:
+      #         only: develop
+
+      - publish-ui:
+          name: publish-ui-dev
+          tag: '--tag dev'
+          is_run_build_command: false
+          requires:
+            - build-ui
+          filters:
+            branches:
+              only: develop
+
+      - deploy-storybook:
+          name: deploy-storybook-dev
+          context: aws-qa
+          requires:
+            - build-ui
+          filters:
+            branches:
+              only: develop
+
+  corva-ui-rc:
+    jobs:
+      - build-ui:
+          filters:
+            branches:
+              only: /release\/.*/
+
+      # - build-corva:
+      #     react_app_environment: qa
+      #     react_app_api_url: https://api.qa.corva.ai
+      #     react_app_subscriptions_url: https://subscriptions.qa.corva.ai
+      #     react_app_auth0_domain: corva.auth0.com
+      #     react_app_auth0_client_id: 5I678Ng65mK3dbsArSoHklJuUTEpOcvl
+      #     react_app_auth0_audience: https://api.qa.corva.ai/v1
+      #     requires:
+      #       - build-ui
+      #     filters:
+      #       branches:
+      #         only: /release\/.*/
+
+      # - deploy-corva-with-ui:
+      #     context: aws-production
+      #     requires:
+      #       - build-corva
+      #     filters:
+      #       branches:
+      #         only: /release\/.*/
+
+      - publish-ui:
+          name: publish-ui-next
+          tag: --tag next
+          is_run_build_command: false
+          requires:
+            - build-ui
+          filters:
+            branches:
+              only: /release\/.*/
+
+  corva-ui-release:
+    jobs:
+      - publish-ui:
+          name: publish-ui-latest
+          tag: --tag latest
+          filters:
+            branches:
+              only: main

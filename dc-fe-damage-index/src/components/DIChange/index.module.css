@@ -1,0 +1,21 @@
+.title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--palette-primary-text-1);
+  margin: 0;
+}
+
+.values {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+}
+
+.tabletSm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}

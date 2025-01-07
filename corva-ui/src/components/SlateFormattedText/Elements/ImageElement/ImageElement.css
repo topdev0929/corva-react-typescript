@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  margin-bottom: -22px;
+}
+
+.image {
+  /* minus image container padding 24px */
+  width: calc(100% - 24px);
+}
+
+.resizable {
+  padding-bottom: 16px;
+}
+
+.handleRight,
+.handleLeft {
+  width: 4px;
+  background-color: #414141;
+  border-radius: 6px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  min-height: 32px;
+}
+
+.handleRight {
+  right: -11px;
+}
+
+.handleLeft {
+  left: -11px;
+}
+
+.handleRight:hover {
+  background-color: #03bcd4;
+}
+
+.handle::after {
+  content: '';
+  width: 9px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-left: -4px;
+  background-color: transparent;
+  cursor: ew-resize;
+  z-index: 2;
+}

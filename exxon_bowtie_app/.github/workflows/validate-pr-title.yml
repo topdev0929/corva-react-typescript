@@ -1,0 +1,19 @@
+name: 'PR title matches "<type>(<scope>): <description>"'
+
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate-pr-title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate PR title
+        uses: corva-ai/gh-actions/shared-dc-workflows/validate-pr-title@develop

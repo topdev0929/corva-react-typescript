@@ -1,0 +1,78 @@
+import { mockTestAssetId } from './mockAppProps';
+
+export const mockWells = [
+  {
+    type: 'well',
+    id: '520912',
+    asset_id: mockTestAssetId,
+    name: 'TimberPSD 2H',
+    status: 'active',
+    stats: {
+      well_end: 0,
+      total_cost: 0,
+      total_time: 0,
+      well_start: 0,
+      total_depth: 0,
+    },
+    last_active_at: '2023-05-15T18:14:54.000Z',
+    is_active: false,
+    app_streams: [
+      {
+        type: 'app_stream',
+        id: 51181,
+        status: 'idle',
+        visibility: 'visible',
+        segment: 'completion',
+        source_type: 'frac',
+        log_type: 'time',
+        log_identifier: null,
+        log_display_name: null,
+        settings: {},
+        first_active_at: '2023-05-09T05:15:00.000Z',
+        last_active_at: '2023-05-15T18:14:54.000Z',
+      },
+    ],
+    rig: {
+      type: 'rig',
+      id: '37923',
+    },
+    relationshipNames: ['app_streams', 'rig'],
+  },
+  {
+    type: 'well',
+    id: '520913',
+    asset_id: 83861817,
+    name: 'TimberPSD 3H',
+    status: 'active',
+    stats: {
+      well_end: 0,
+      total_cost: 0,
+      total_time: 0,
+      well_start: 0,
+      total_depth: 0,
+    },
+    last_active_at: '2023-05-15T14:20:39.000Z',
+    is_active: false,
+    app_streams: [
+      {
+        type: 'app_stream',
+        id: 51183,
+        status: 'idle',
+        visibility: 'visible',
+        segment: 'completion',
+        source_type: 'frac',
+        log_type: 'time',
+        log_identifier: null,
+        log_display_name: null,
+        settings: {},
+        first_active_at: '2023-05-09T10:00:00.000Z',
+        last_active_at: '2023-05-15T14:20:39.000Z',
+      },
+    ],
+    rig: {
+      type: 'rig',
+      id: '37923',
+    },
+    relationshipNames: ['app_streams', 'rig'],
+  },
+];

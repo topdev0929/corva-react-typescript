@@ -1,0 +1,14 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-auto-rows: auto;
+  column-gap: 16px;
+  row-gap: 24px;
+  align-items: center;
+}
+
+.placeholder {
+  display: flex;
+  align-items: flex-end;
+  color: rgb(55, 236, 176);
+}

@@ -1,0 +1,1 @@
+export { HelpCenterIcon } from './HelpCenterIcon';

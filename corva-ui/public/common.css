@@ -1,0 +1,48 @@
+@import-normalize; /* bring in normalize.css styles */
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(51, 51, 51);
+  color: white;
+  font-family: Roboto, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: #039be5;
+}
+
+#root {
+  height: 100%;
+}
+
+/* https://github.com/reactjs/react-modal/issues/191*/
+/* This prevents double scrolling when adding new app on dashboard */
+.ReactModal__Body--open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* NOTE: Here we override the highcharts tooltip container zIndex
+   The problem is, when tooltip.outside=true, it's appended to DOM with zIndex:3 and is not visible in fullscreen apps
+   because fullscreen apps have zIndex:500
+   https://stackoverflow.com/questions/57365953/highcharts-tooltip-appearing-behind-the-dialog-holding-the-chart
+*/
+.highcharts-tooltip-container {
+  z-index: 501 !important;
+}
+

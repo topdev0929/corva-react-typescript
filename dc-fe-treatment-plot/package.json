@@ -1,0 +1,135 @@
+{
+  "name": "TreatmentPlot",
+  "version": "0.25.0",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --config=./config-overrides.js --mode production",
+    "start": "webpack-dev-server --config=./config-overrides.js --open --mode development",
+    "release": "create-corva-app --release",
+    "zip": "create-corva-app zip .",
+    "test": "jest",
+    "test-coverage": "jest --watchAll --coverage && http-serve coverage",
+    "test-watch": "jest --watch",
+    "lint": "eslint --cache ./src/",
+    "postinstall": "husky install",
+    "coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.19.3",
+    "@commitlint/cli": "^17.4.2",
+    "@commitlint/config-conventional": "^17.4.2",
+    "@corva/dc-platform-shared": "^0.6.0",
+    "@corva/eslint-config-browser": "^0.1.6",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@testing-library/user-event": "^13.2.1",
+    "@tsconfig/create-react-app": "1.0.2",
+    "@types/jest": "26.0.24",
+    "@types/material-ui": "0.21.9",
+    "@types/react": "^17.0.22",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^5.36.1",
+    "babel-jest": "^27.4.2",
+    "babel-preset-react-app": "^10.0.1",
+    "eslint": "7.32.0",
+    "eslint-import-resolver-typescript": "^3.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^8.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.4.3",
+    "jest-watch-typeahead": "^1.0.0",
+    "lint-staged": "^13.1.0",
+    "postcss-loader": "4.1.0",
+    "ts-loader": "8.2.0",
+    "typescript": "4.5.4"
+  },
+  "dependencies": {
+    "@corva/ui": "^0.66.0-1",
+    "@material-ui/core": "4.11.2",
+    "@material-ui/icons": "4.9.1",
+    "@material-ui/lab": "4.0.0-alpha.57",
+    "@material-ui/pickers": "3.2.10",
+    "classnames": "2.2.6",
+    "corva-convert-units": "1.10.17",
+    "echarts": "~5.2.2",
+    "highcharts": "8.1.2",
+    "highcharts-react-official": "2.2.2",
+    "lodash": "^4.17.4",
+    "mapbox.js": "3.2.1",
+    "moment": "2.23.0",
+    "moment-timezone": "0.5.23",
+    "numeral": "^2.0.6",
+    "prop-types": "^15.6.1",
+    "react": "17.0.1",
+    "react-app-rewire-multiple-entry": "^2.2.1",
+    "react-cursor-position": "3.0.3",
+    "react-dom": "17.0.1",
+    "react-draggable-list": "3.7.0",
+    "react-intersection-observer": "^8.33.1",
+    "react-query": "^3.39.3",
+    "react-sizeme": "2.5.2",
+    "size-sensor": "^1.0.1",
+    "use-tiny-state-machine": "^0.0.2",
+    "zoid": "^9.0.86"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/**/*.d.ts"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 5,
+        "functions": 10,
+        "lines": 14,
+        "statements": 14
+      }
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/config/jest/setupTests.js"
+    ],
+    "globalSetup": "<rootDir>/config/jest/globalSetup.js",
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+      "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+    ],
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "<rootDir>/config/jest/babelTransform.js",
+      "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "/node_modules/(?!.*@babel/runtime).+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+      "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "modulePaths": [],
+    "moduleNameMapper": {
+      "~(.*)": "<rootDir>/src/$1",
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+      "@corva/ui(.*)": "@corva/ui/cjs-bundle/$1",
+      "@/(.*)": "<rootDir>/src/$1"
+    },
+    "watchPlugins": [
+      "jest-watch-typeahead/filename",
+      "jest-watch-typeahead/testname"
+    ],
+    "clearMocks": true
+  },
+  "resolutions": {
+    "@types/react": "17.0.2",
+    "@types/react-dom": "17.0.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+.mapView {
+  width: 100%;
+}
+
+.zoomGroup {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 9;
+}
+
+.zoomButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--palette-primary-text-6);
+  font-size: 22px;
+  text-align: center;
+  width: 32px;
+  height: 32px;
+  background: var(--palette-background-b-6);
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.zoomButton:hover {
+  color: #fff;
+  background: var(--palette-background-b-7);
+}
+
+.zoomDisabled {
+  cursor: not-allowed;
+}
+
+.zoomDisabled:hover {
+  color: var(--palette-primary-text-6);
+  background: var(--palette-background-b-6);
+}
+
+.zoomInOutIcon {
+  font-size: 1rem !important;
+}
+
+.mapMain {
+  width: 100%;
+  flex: 100;
+  height: 200px;
+  border-radius: 4px;
+  background-color: var(--palette-background-b-9);
+  border: 1px solid var(--palette-background-b-9);
+  position: relative;
+}
+
+.mapView :global(.leaflet-popup) {
+  transform: none !important;
+  top: 0px !important;
+  left: 0px !important;
+}
+
+.mapView :global(.leaflet-popup-content-wrapper) {
+  background-color: transparent;
+  opacity: 0.9;
+  border-radius: 4px;
+}
+
+.mapView :global(.leaflet-popup-content) {
+  padding: 8px;
+}
+
+.mapView :global(.leaflet-popup-tip) {
+  display: none;
+}
+
+.mapView :global(.leaflet-popup-close-button) {
+  display: none;
+}
+
+.mapView :global(.leaflet-control-zoom) {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+
+.mapView :global(.leaflet-control-zoom a) {
+  text-indent: unset;
+  content: unset;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background: var(--palette-background-b-6);
+  color: var(--palette-primary-text-6);
+  border-radius: 4px;
+  margin-top: 4px;
+  opacity: 1;
+}
+
+.mapView :global(.leaflet-control-zoom a:hover) {
+  color: var(--palette-primary-text-1);
+  background: var(--palette-background-b-7);
+  border-radius: 4px;
+}
+
+.mapView :global(.leaflet-touch .leaflet-bar) {
+  border: 0px solid transparent;
+  background-clip: padding-box;
+}
+
+.mapView :global(.leaflet-touch .leaflet-control-layers) {
+  border: 0px solid transparent;
+  background-clip: padding-box;
+}

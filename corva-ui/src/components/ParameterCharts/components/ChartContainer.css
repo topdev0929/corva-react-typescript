@@ -1,0 +1,16 @@
+.container {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.horizontal {
+  margin-right: 8px;
+}
+
+.first {
+  height: 123px;
+}

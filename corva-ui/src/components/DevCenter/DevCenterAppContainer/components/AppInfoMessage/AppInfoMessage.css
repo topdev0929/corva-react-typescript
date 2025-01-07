@@ -1,0 +1,34 @@
+.appInfoMessage {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 12px 30px 12px;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.message {
+  color: #bdbdbd;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.submessage {
+  color: #bdbdbd;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.infoIcon {
+  color: #bdbdbd;
+  width: 7em !important;
+  height: 7em !important;
+}

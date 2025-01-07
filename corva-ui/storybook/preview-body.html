@@ -1,0 +1,355 @@
+<div id="custom-root"></div>
+
+<style>
+  body {
+    background-color: #2c2c2c;
+    color: white;
+    font-family: Roboto, sans-serif;
+    height: 100%;
+    margin: 0;
+  }
+
+  .storybook-miniapp {
+    box-shadow: none;
+  }
+
+  .sbdocs.sbdocs-wrapper,
+  .storybook-miniapp-container,
+  .storybook-miniapp-container:first-child {
+    background-color: #2c2c2c !important;
+    color: white;
+  }
+
+  .sb-show-main {
+    background-color: #2c2c2c !important;
+  }
+
+  .info-table thead tr th,
+  .info-table tbody tr td,
+  h1 {
+    color: white;
+  }
+
+  .sbdocs.sbdocs-wrapper {
+    padding-top: 40px;
+    padding-left: 24px;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.sbdocs-h1 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #fff;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #616161;
+    margin-bottom: 18px;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.sbdocs-h2 {
+    border-bottom: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .sbdocs.sbdocs-div.schema {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 16px 55px;
+    background-color: #272727;
+  }
+
+  .sbdocs .sbdocs-div .description-icon .chip {
+    padding: 3px 7px 0 7px;
+    width: 64px;
+    height: 17px;
+    background: #bd32c9;
+    border-radius: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    align-self: center;
+    margin: 4px 0px;
+    top: -55px;
+    position: relative;
+    right: -100px;
+    z-index: 3;
+    align-items: center;
+    text-align: center;
+    margin: 4px 0px;
+  }
+
+  .description-icon {
+    display: flex;
+    margin-left: -28px;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.header {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #bdbdbd;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.image-with-description img {
+    width: 102px;
+    left: -50px;
+    position: relative;
+    background: #272727;
+    border-radius: 4px;
+    padding: 16px;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.image-with-description {
+    display: flex;
+    margin-bottom: 32px;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.image-with-description .description {
+    padding-left: 19px;
+    padding-top: 16px;
+    width: 696px;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.image-with-description .description .sbdocs.sbdocs-div {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #bdbdbd;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.code-block {
+    width: 100%;
+    background-color: #272727;
+    padding: 8px 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .sbdocs.sbdocs-pre .docblock-source {
+    background-color: #272727;
+    border: none;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.code-block.small {
+    width: fit-content;
+  }
+
+  .sbdocs.sbdocs-div.param {
+    display: flex;
+  }
+
+  .param-description {
+    font-size: 14px;
+    margin-top: -12px;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.param div {
+    width: fit-content;
+    padding: 8px 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.param .chip {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    align-items: center;
+    color: #bdbdbd;
+    align-self: center;
+    margin: 8px 0px;
+    padding: 6px 12px;
+    position: relative;
+    width: auto;
+    height: 24px;
+    border: 1px solid #616161;
+    box-sizing: border-box;
+    border-radius: 40px;
+    display: flex;
+    margin-left: 8px;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.code-block .sbdocs.sbdocs-div,
+  .sbdocs.sbdocs-wrapper .sbdocs.code-block .sbdocs.sbdocs-span,
+  .sbdocs.sbdocs-wrapper .sbdocs.code-block.small,
+  .sbdocs.sbdocs-div.small-header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 15px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.code-block.small {
+    text-transform: none;
+    font-size: 11px;
+  }
+
+  .sbdocs.sbdocs-div.small-header {
+    margin-bottom: 12px;
+    margin-top: 12px;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.code-block .sbdocs.sbdocs-div {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .sbdocs.sbdocs-div.small-header {
+    color: #808080;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.sbdocs-div.method {
+    display: flex;
+  }
+
+  .sbdocs.sbdocs-div.method {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px 0 8px;
+  }
+
+  .language-block {
+    width: 326px;
+    background: #333333;
+    border: 1px solid #03bcd4;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 8px 20px 16px 12px;
+    display: flex;
+    margin-bottom: 32px;
+  }
+
+  .language-block .language-icon {
+    width: 24px;
+  }
+
+  .language-block .language-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    order: 2;
+    align-self: center;
+    padding-bottom: 4px;
+  }
+
+  .language-description {
+    padding-left: 8px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    color: #bdbdbd;
+  }
+
+  .language-description .sbdocs.sbdocs-div {
+    font-size: 13px;
+  }
+
+  .language-description .version {
+    display: flex;
+  }
+
+  .language-description .version .sbdocs.sbdocs-div:first-child {
+    padding-right: 8px;
+  }
+
+  .label-value {
+    display: flex;
+  }
+
+  .label-value .value {
+    color: #fff;
+  }
+
+  .yellow-text {
+    color: #f1c973;
+  }
+
+  .blue-text {
+    color: #86b5ed;
+  }
+
+  .download-button {
+    width: 230px;
+    height: 36px;
+    background: #03bcd4;
+    border-radius: 4px;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .download-button:focus {
+    border: none;
+    outline: none;
+  }
+
+  .sbdocs.sbdocs-div.button-content {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 12px;
+    color: #ffffff;
+  }
+
+  .download-button .download-icon {
+    margin-right: 8px;
+  }
+
+  .download-button .download-icon svg {
+    width: 24px;
+    margin-top: -6px;
+  }
+
+  .download-button .button-content {
+    display: flex;
+  }
+
+  .sbdocs.sbdocs-a {
+    color: #03bcd4;
+  }
+
+  .sbdocs.sbdocs-table tr {
+    background-color: #2c2c2c;
+  }
+
+  .sbdocs.sbdocs-wrapper .sbdocs.code-block {
+    width: 676px;
+    background: #272727;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1.25px;
+    color: #ffffff;
+    padding: 16px;
+  }
+
+  .docs-content-step {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #ffffff;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .docs-content-step span {
+    color: #bdbdbd;
+  }
+
+  .step-description {
+    font-style: normal;
+    font-weight: normal;
+    margin: 8px 0px;
+    font-size: 14px;
+    color: #bdbdbd;
+  }
+</style>

@@ -1,0 +1,35 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeature": {
+      "jsx": true
+    }
+  },
+  "extends": ["@corva/eslint-config-browser", "plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "@typescript-eslint/no-explicit-any": "off",
+    /* Turned off until adopted by @corva/eslint-config-browser */
+    "react/prop-types": 0,
+    "react/default-props-match-prop-types": 0,
+    "react/no-unused-prop-types": 0,
+    "react/require-default-props": 0,
+    /* Turned off until adopted by @corva/eslint-config-browser */
+
+    "no-underscore-dangle": "off",
+    "no-return-assign": "off",
+    "consistent-return": "off",
+    "no-continue": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": ["memo"]
+      }
+    ],
+    "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }]
+  }
+}

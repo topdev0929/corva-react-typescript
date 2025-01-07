@@ -1,0 +1,68 @@
+<Meta title="Styles/typography" />
+
+import { typography } from '../../../src/styles';
+
+# typography
+
+@corva/ui library provides CSS classes that can be applied to any
+element to make it look according to the Corva design system
+
+```javascript
+import { typography } from '@corva/ui/styles';
+
+const Demo = () => <span className={typography.bold24}>Default</span>;
+```
+
+If you need to use an alternative text color from Corva design system
+you can add its class, like this
+
+```javascript
+import { typography } from '@corva/ui/styles';
+import classNames from 'classnames';
+
+const Demo = () => (
+  <span className={classNames(typography.bold24, typography.colors.t6)}>Alternative color</span>
+);
+```
+
+| **Available alternative colors** |
+| -------------------------------- |
+| typography.colors.t1             |
+| typography.colors.t6             |
+| typography.colors.t7             |
+| typography.colors.t8             |
+| typography.colors.t9             |
+
+| **Available typography classes**                                       |
+| ---------------------------------------------------------------------- |
+| <p className={typography.regular10}>typography.regular10</p>           |
+| <p className={typography.medium10}>typography.medium10</p>             |
+| <p className={typography.bold10}>typography.bold10</p>                 |
+| <p className={typography.regular11}>typography.regular11</p>           |
+| <p className={typography.medium11}>typography.medium11</p>             |
+| <p className={typography.bold11}>typography.bold11</p>                 |
+| <p className={typography.regular12}>typography.regular12</p>           |
+| <p className={typography.medium12}>typography.medium12</p>             |
+| <p className={typography.bold12}>typography.bold12</p>                 |
+| <p className={typography.regular14}>typography.regular14</p>           |
+| <p className={typography.medium14}>typography.medium14</p>             |
+| <p className={typography.medium14Button}>typography.medium14Button</p> |
+| <p className={typography.bold14}>typography.bold14</p>                 |
+| <p className={typography.regular16}>typography.regular16</p>           |
+| <p className={typography.medium16}>typography.medium16</p>             |
+| <p className={typography.bold16}>typography.bold16</p>                 |
+| <p className={typography.regular18}>typography.regular18</p>           |
+| <p className={typography.medium18}>typography.medium18</p>             |
+| <p className={typography.bold18}>typography.bold18</p>                 |
+| <p className={typography.regular20}>typography.regular20</p>           |
+| <p className={typography.medium20}>typography.medium20</p>             |
+| <p className={typography.bold20}>typography.bold20</p>                 |
+| <p className={typography.regular24}>typography.regular24</p>           |
+| <p className={typography.medium24}>typography.medium24</p>             |
+| <p className={typography.bold24}>typography.bold24</p>                 |
+| <p className={typography.regular32}>typography.regular32</p>           |
+| <p className={typography.medium32}>typography.medium32</p>             |
+| <p className={typography.bold32}>typography.bold32</p>                 |
+| <p className={typography.regular36}>typography.regular36</p>           |
+| <p className={typography.medium36}>typography.medium36</p>             |
+| <p className={typography.bold36}>typography.bold36</p>                 |

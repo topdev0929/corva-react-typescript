@@ -1,0 +1,7 @@
+{
+  "issueUrlFormat": "https://corvaqa.atlassian.net/browse/{{id}}",
+  "scripts": {
+    "postbump": "echo Version: v$npm_package_version",
+    "posttag": "git push --follow-tags origin head"
+  }
+}

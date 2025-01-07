@@ -1,0 +1,60 @@
+.container {
+  background-color: #201f1f;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+:global(.dc-app-container__light-theme) {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: inset 0 0 0 2px #ccc;
+}
+
+:global(.dc-app-container__pdf-report) {
+  zoom: 0.5;
+}
+
+:global(.c-dashboard-report__app--light-theme),
+:global(.dc-app-container__light-theme) {
+  scrollbar-color: rgba(128, 128, 128, 0.6) transparent !important;
+}
+
+:global(.dc-app-container:has(.c-status-badge--error)) {
+  border: 1px solid var(--palette-error-main);
+}
+
+:global(.dc-app-container:has(.c-status-badge--issue)) {
+  border: 1px solid #FFA500;
+}
+
+.containerContent {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.containerMaximized {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  width: auto;
+  height: auto;
+  z-index: 500;
+  box-shadow: 0 0 18px 3px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+.containerMaximized .containerContent {
+  margin-right: 28px;
+  width: auto;
+}
+
+.footerIconButton {
+  margin-right: 4px !important;
+}

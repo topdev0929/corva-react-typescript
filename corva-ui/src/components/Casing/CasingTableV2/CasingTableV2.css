@@ -1,0 +1,52 @@
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tableContent {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-right: 12px;
+  padding-bottom: 16px;
+}
+
+.tableContent::-webkit-scrollbar-track {
+  margin-top: 50px;
+}
+
+.contentMobile {
+  padding: 0px 16px 16px;
+  margin-top: 1px;
+}
+
+.contentMobile::-webkit-scrollbar-track {
+  margin-top: 0px;
+}
+
+.topGradient {
+  position: absolute;
+  height: 16px;
+  left: 0;
+  right: 0;
+  top: 50px;
+  background: linear-gradient(0deg, rgba(39, 39, 39, 0) 0%, var(--palette-background-b-5) 100%);
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.bottomGradient {
+  position: absolute;
+  height: 16px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(39, 39, 39, 0) 0%, var(--palette-background-b-5) 100%);
+}

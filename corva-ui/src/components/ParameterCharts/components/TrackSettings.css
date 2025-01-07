@@ -1,0 +1,43 @@
+.title {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #bdbdbd;
+}
+
+.tracesContainer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  border-top: 1px solid #616161;
+  margin-top: 25px;
+}
+
+.tracesItem {
+  display: flex;
+  align-items: flex-end;
+  border-bottom: 1px solid #616161;
+  padding: 0 10px 10px;
+  position: relative;
+}
+
+.colorPicker {
+  margin: 0 50px 0 36px;
+}
+
+.actions {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.modalTitle {
+  color: #fff;
+  font-size: 20px;
+}
+
+.trackTitle {
+  cursor: pointer;
+  color: #03BCD4;
+  font-size: 13px;
+}
+

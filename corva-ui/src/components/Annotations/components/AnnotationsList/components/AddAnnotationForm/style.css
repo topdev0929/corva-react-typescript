@@ -1,0 +1,38 @@
+.cAddAnnotationFormInput {
+  margin-top: 15px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+.cAddAnnotationFormInputPaper {
+  flex: 1;
+  display: flex;
+  margin-left: 9px;
+  margin-top: 3px;
+}
+
+.cAddAnnotationFormInputPaperClosed {
+  height: 32px;
+  cursor: pointer;
+}
+
+.cAddAnnotationFormInputPaperOpened .cAddAnnotationFormInputPaperLabel,
+.cAddAnnotationFormInputPaperClosed .cAddAnnotationFormInputPaperAddAnnotation {
+  display: none;
+}
+
+.cAddAnnotationFormInputPaperLabel {
+  width: 100%;
+  padding: 6px 13px;
+  box-shadow: none;
+}
+
+.cAddAnnotationFormInputPaperAddAnnotation {
+  width: 100%;
+}
+
+/* Current approach to fix user-mentions position on container with position absolute */
+.cAddAnnotationForm .cUserMentionSuggestions {
+  top: auto !important;
+}

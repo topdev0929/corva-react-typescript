@@ -1,0 +1,10 @@
+.container {
+  position: relative;
+}
+
+.badge {
+  padding: 0;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+}

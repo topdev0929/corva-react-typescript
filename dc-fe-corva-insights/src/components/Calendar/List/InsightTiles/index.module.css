@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 4px;
+}
+
+.container.isMinimized {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.moreTooltip {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  gap: 4px;
+}
+
+.moreTooltipRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.moreTooltipRowIcon {
+  width: 10px;
+}
+
+.moreTooltipRowText {
+  margin: 0 0 0 4px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--palette-primary-text-1);
+}

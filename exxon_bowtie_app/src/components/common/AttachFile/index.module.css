@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+}
+
+.fileInput {
+  display: none;
+}

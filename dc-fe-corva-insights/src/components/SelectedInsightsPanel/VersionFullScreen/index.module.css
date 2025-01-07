@@ -1,0 +1,59 @@
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 36px calc(100% - 84px) 48px;
+  position: absolute;
+  background-color: var(--palette-background-b-4);
+  z-index: 2;
+}
+
+.container.isMobile {
+  grid-template-rows: 88px calc(100% - 136px) 48px;
+}
+
+.container.isMobile .header {
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container.isMobile .tabBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+  gap: 16px;
+}
+
+.headerMain {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  padding: 16px 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 12px 16px 0;
+}
+
+.gradientList {
+  background: linear-gradient(180deg, #212121 0%, rgba(33, 33, 33, 0) 100%);
+}

@@ -1,0 +1,5 @@
+# These owners are the default owners for everything in
+# the repo. They're automatically added as reviewers
+# to each pull request
+
+* @corva-ai/front-end-dev-center-apps

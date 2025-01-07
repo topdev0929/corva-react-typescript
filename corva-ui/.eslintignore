@@ -1,0 +1,3 @@
+src/config/highcharts/highcharts-contour.js
+src/utils/DrillstringUtils.js
+*.test.js

@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0 0 8px 0;
+  color: var(--palette-primary-text-6);
+}
+
+.date.isSelected {
+  color: var(--palette-primary-light);
+}

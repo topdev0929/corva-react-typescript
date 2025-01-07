@@ -1,0 +1,32 @@
+<Meta title="Utils/Main/getAssetStatusColor" />
+
+# Main Utils
+
+Common utils.
+
+## getAssetStatusColor
+
+Returns color by asset status:
+
+- active
+- complete
+- paused
+- idle
+- unknown
+
+### Example
+
+```javascript
+import utils from '~/utils';
+
+utils.getAssetStatusColor('active'); // returns '#4caf50'
+```
+
+#### Parameters
+
+<div class="param">
+  <div class="code-block small">
+    <i>status: String</i>
+  </div>
+  <div class="chip">Required</div>
+</div>

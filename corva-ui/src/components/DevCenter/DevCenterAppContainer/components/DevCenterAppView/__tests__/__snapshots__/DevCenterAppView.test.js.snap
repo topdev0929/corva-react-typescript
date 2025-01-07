@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DevCenterAppView regular app - multirig app passes all required props to AppComponent 1`] = `
+<body>
+  <div>
+    <div
+      data-testid="componentTestId"
+    >
+      {"app":{"package":{"manifest":{"application":{"name":"My awesome app"}}},"settings":{"rigId":"rigId"}},"rigId":"rigId","appProp1":"appProp1"}
+    </div>
+  </div>
+</body>
+`;
+
+exports[`DevCenterAppView regular app - with actual appData passes all required props to AppComponent 1`] = `
+<body>
+  <div>
+    <div
+      data-testid="componentTestId"
+    >
+      {"app":{"package":{"manifest":{"application":{"name":"My awesome app"}}},"settings":{"rigId":"rigId"}},"rigId":"rigId","well":{},"appProp1":"appProp1"}
+    </div>
+  </div>
+</body>
+`;

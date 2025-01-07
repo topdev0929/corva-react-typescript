@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 8px;
+}
+
+.metaData {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.menu {
+  visibility: hidden;
+  position: absolute;
+  top: -3px;
+  right: 0;
+}
+
+.container:hover .menu {
+  visibility: visible;
+}

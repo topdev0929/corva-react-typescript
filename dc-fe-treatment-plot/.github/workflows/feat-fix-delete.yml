@@ -1,0 +1,16 @@
+name: branch deletion flow
+on:
+  delete:
+
+jobs:
+  branch-deletion-flow:
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.ref, 'feat/') || startsWith(github.event.ref, 'fix/')
+    steps:
+      - name: branch deletion flow
+        uses: corva-ai/gh-actions/shared-dc-workflows/feat-fix-delete@develop
+        with:
+          is-delete-from-qa: true
+          qa-api-key: ${{ secrets.API_KEY_QA }}
+          is-delete-from-prod: false
+          prod-api-key: ${{ secrets.API_KEY }}

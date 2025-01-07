@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot DevCenterAppErrorView appProviderUrl false 1`] = `
+<body>
+  <div>
+    <div
+      class="container"
+    >
+      <div
+        content="{\\"app\\":{}}"
+      >
+        app
+      </div>
+      <div
+        class="makeStyles-root-10"
+      >
+        <div
+          class="makeStyles-content-11"
+        >
+          <div
+            class="makeStyles-title-12 makeStyles-title-15"
+          >
+            App Loading Error
+          </div>
+          <div
+            class="makeStyles-subtitle-13 makeStyles-subtitle-16"
+          >
+            <span>
+              This app failed to load. Try refreshing the page or
+               
+              <span
+                class="makeStyles-subtitle-18"
+              >
+                contact support
+              </span>
+              .
+            </span>
+          </div>
+          <img
+            alt="error"
+            class="makeStyles-image-14 makeStyles-image-17"
+            src="/static/media/e934cdf7e3c2d53a46ad705499ddc7ac.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Snapshot DevCenterAppErrorView appProviderUrl true 1`] = `
+<body>
+  <div>
+    <div
+      class="container"
+    >
+      <div
+        content="{\\"app\\":{}}"
+      >
+        app
+      </div>
+      <div
+        class="makeStyles-root-1"
+      >
+        <div
+          class="makeStyles-content-2"
+        >
+          <div
+            class="makeStyles-title-3 makeStyles-title-6"
+          >
+            App Loading Error
+          </div>
+          <div
+            class="makeStyles-subtitle-4 makeStyles-subtitle-7"
+          >
+            <span>
+              This app failed to load. Try refreshing the page or
+               
+              <span
+                class="makeStyles-subtitle-9"
+              >
+                contact support
+              </span>
+              .
+            </span>
+          </div>
+          <img
+            alt="error"
+            class="makeStyles-image-5 makeStyles-image-8"
+            src="/static/media/e934cdf7e3c2d53a46ad705499ddc7ac.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Snapshot DevCenterAppErrorView withAppHeader false 1`] = `
+<body>
+  <div>
+    <div
+      class="container"
+    >
+      <div
+        content="{\\"app\\":{}}"
+      >
+        app
+      </div>
+      <div
+        class="makeStyles-root-28"
+      >
+        <div
+          class="makeStyles-content-29"
+        >
+          <div
+            class="makeStyles-title-30 makeStyles-title-33"
+          >
+            App Loading Error
+          </div>
+          <div
+            class="makeStyles-subtitle-31 makeStyles-subtitle-34"
+          >
+            <span>
+              This app failed to load. Try refreshing the page or
+               
+              <span
+                class="makeStyles-subtitle-36"
+              >
+                contact support
+              </span>
+              .
+            </span>
+          </div>
+          <img
+            alt="error"
+            class="makeStyles-image-32 makeStyles-image-35"
+            src="/static/media/e934cdf7e3c2d53a46ad705499ddc7ac.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Snapshot DevCenterAppErrorView withAppHeader true 1`] = `
+<body>
+  <div>
+    <div
+      class="container"
+    >
+      <div
+        content="{\\"app\\":{}}"
+      >
+        app
+      </div>
+      <div
+        class="makeStyles-root-19"
+      >
+        <div
+          class="makeStyles-content-20"
+        >
+          <div
+            class="makeStyles-title-21 makeStyles-title-24"
+          >
+            App Loading Error
+          </div>
+          <div
+            class="makeStyles-subtitle-22 makeStyles-subtitle-25"
+          >
+            <span>
+              This app failed to load. Try refreshing the page or
+               
+              <span
+                class="makeStyles-subtitle-27"
+              >
+                contact support
+              </span>
+              .
+            </span>
+          </div>
+          <img
+            alt="error"
+            class="makeStyles-image-23 makeStyles-image-26"
+            src="/static/media/e934cdf7e3c2d53a46ad705499ddc7ac.svg"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

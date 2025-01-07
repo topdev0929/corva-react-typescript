@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--palette-background-b-4);
+}
+
+.appHeader {
+  padding: 12px 12px 0px;
+}
+
+.contentWrapper {
+  height: calc(100% - 56px);
+}
+
+@media (max-width: 960px)
+{
+  .appContentWrapper {
+    height: calc(100% - 36px)
+  }
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 0 12px 36px;
+  text-align: initial;
+}
+
+.viewWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: calc(100% - 46px);
+}
+
+.graphContainer {
+  display: none;
+  gap: 16px;
+  height: 55%;
+}
+
+.tableContainer {
+  display: none;
+  height: calc(45% - 16px);
+}
+
+.visible {
+  display: flex;
+}
+
+.fullVisible {
+  height: 100%;
+  max-height: 100%;
+}
+
+.logo {
+  width: 28px;
+  height: 26px;
+}
+
+.appFooter {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.appFooter > div {
+  background-color: transparent
+}
+

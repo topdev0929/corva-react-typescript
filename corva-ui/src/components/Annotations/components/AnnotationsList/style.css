@@ -1,0 +1,64 @@
+.cAnnotationsList {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  min-width: 0;
+  height: 100%;
+  z-index: 1201; /* NOTE: Bigger by 1 from SideBar panel  */
+  transition: min-width 300ms ease-in-out, width 300ms ease-in-out !important;
+  border-radius: 0;
+  background-color: transparent !important;
+}
+
+.cAnnotationsList::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  backdrop-filter: blur(4px);
+  background: #161616b0;
+
+  /* NOTE: Because of chromium issue blur might not work initially without this animation */
+  animation: blur 0.5s 1 linear;
+}
+
+.cAnnotationsListOpen {
+  width: 80%;
+  max-width: 420px;
+  min-width: 340px;
+}
+
+.cAnnotationsListOpenNative {
+  width: 100%;
+}
+
+.cAnnotationsListContentContainer {
+  padding: 16px 16px 0 16px;
+}
+
+.cAnnotationsListActions {
+  text-align: right;
+  padding: 16px;
+  margin-top: auto;
+}
+
+.cAnnotationsListContentTopIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+@keyframes blur {
+  from {
+    backdrop-filter: blur(0px);
+  }
+  to {
+    backdrop-filter: blur(4px);
+  }
+}

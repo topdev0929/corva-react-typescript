@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 16px;
+  color: var(--palette-success-main);
+  margin: 0 4px 0 0;
+}
+
+.warnValue {
+  color: var(--palette-warning-main);
+}
+
+.dangerValue {
+  color: var(--palette-error-main);
+}

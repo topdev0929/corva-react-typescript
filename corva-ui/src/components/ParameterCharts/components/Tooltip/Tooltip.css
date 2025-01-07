@@ -1,0 +1,61 @@
+.container {
+  position: absolute;
+  top: -4px;
+  bottom: 0;
+  left: 0;
+  padding-top: 15px;
+  transition-duration: 0.2s;
+  border-left: 1px solid #777;
+}
+
+.tooltipContainer {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.indexTooltip {
+  background: rgba(20, 20, 20, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: 4px;
+  color: #fff;
+  font-size: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 4px;
+}
+
+.content {
+  padding: 9px 7px 6px;
+  background: rgba(20, 20, 20, 0.5);
+  backdrop-filter: blur(4px);
+  border-radius: 0 4px 4px 0;
+}
+
+.line {
+  width: 16px;
+  height: 0;
+}
+
+.name {
+  padding: 0 8px;
+  font-size: 10px;
+  color: rgba(255,255,255, 0.7);
+  min-width: 75px;
+  text-align: left;
+}
+
+.value {
+  color: #fff;
+  font-size: 12px;
+  text-align: left;
+  padding-right: 4px;
+}
+
+.units {
+  font-size: 10px;
+  text-align: left;
+  color: rgba(255,255,255, 0.7);
+}

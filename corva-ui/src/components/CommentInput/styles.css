@@ -1,0 +1,27 @@
+.cCommentInputSendContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 48px;
+  margin-top: 4px;
+}
+
+.cCommentInputSendContainerSend,
+.cCommentInputSendContainerCancel {
+  display: flex;
+  align-items: center;
+  height: 36px;
+}
+
+.cCommentInputIconContainer {
+  border-radius: 20px;
+}
+.cCommentInputIconContainer:hover {
+  background: #414141;
+}
+
+.cCommentInputIconUpload {
+  display: flex;
+  align-items: center;
+  height: 28px;
+  width: 28px;
+}

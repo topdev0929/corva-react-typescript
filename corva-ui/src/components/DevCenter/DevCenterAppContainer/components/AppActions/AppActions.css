@@ -1,0 +1,20 @@
+.appActions {
+  position: absolute;
+  right: 7px;
+  bottom: 5px;
+  cursor: pointer;
+  margin-left: 12px;
+  visibility: hidden;
+  transition: visibility 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  /* Set very big z-index so that App Actions are always on top of App Content. Fixes bug for customers */
+  z-index: 1000;
+}
+
+:global(.dc-app-container:hover) .appActions {
+  visibility: visible;
+}
+
+.appActionsButton {
+  padding: 3px;
+  background-color: transparent !important;
+}

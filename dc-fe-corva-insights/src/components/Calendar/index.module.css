@@ -1,0 +1,8 @@
+.container {
+  height: calc(100% - 64px);
+  width: 100%;
+}
+
+.container.isMobile {
+  height: calc(100% - 52px);
+}

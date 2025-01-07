@@ -1,0 +1,20 @@
+.cTopAnnotationAdditional,
+.cTopAnnotationMain {
+  align-items: center;
+  display: flex;
+}
+
+.cTopAnnotationMain {
+  overflow: hidden;
+}
+
+.cTopAnnotationAdditionalReactions {
+  display: flex;
+  align-items: center;
+}
+
+.cTopAnnotationAdditionalReactionsList {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}

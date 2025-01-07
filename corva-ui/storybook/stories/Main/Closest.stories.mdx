@@ -1,0 +1,36 @@
+<Meta title="Utils/Main/closest" />
+
+# Main Utils
+
+Common utils.
+
+## closest
+
+Finds closest to value in array of numbers.
+Source: https://stackoverflow.com/a/19277804/8337033
+
+### Example
+
+```javascript
+import utils from '~/utils';
+
+utils.closest([1, 2, 42], 33); // returns 42
+```
+
+#### Parameters
+
+<div class="param">
+  <div class="code-block small">
+    <i>array: Array of Numbers</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+<div class="param-description">Array to find closest to value.</div>
+
+<div class="param">
+  <div class="code-block small">
+    <i>value: Number</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+<div class="param-description">Value to which find closest in array.</div>

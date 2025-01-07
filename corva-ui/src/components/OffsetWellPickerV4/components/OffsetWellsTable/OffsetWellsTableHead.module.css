@@ -1,0 +1,106 @@
+.tableRow {
+  display: flex !important;
+  flex-direction: row !important;
+}
+
+.headCell {
+  display: flex !important;
+  align-items: center !important;
+  padding: 0px !important;
+  padding-right: 12px !important;
+  height: 48px !important;
+  background: var(--palette-background-b-9) !important;
+}
+
+.wellNameCell {
+  position: sticky;
+  left: 0px;
+  z-index: 9;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 2px !important;
+}
+
+.wellNameCellMobile {
+  position: static;
+}
+
+.cellDataViewOnly {
+  padding-left: 12px !important;
+}
+
+.nameWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.headerLabel {
+  display: flex !important;
+  justify-content: flex-start !important;
+  width: 100%;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.4px;
+  color: var(--palette-primary-text-7) !important;
+  user-select: none;
+  white-space: normal;
+}
+
+.headerLabel:hover {
+  color: var(--palette-primary-text-1) !important;
+}
+
+.wellNameExpandIcon {
+  font-size: 10px !important;
+  color: var(--palette-primary-text-6) !important;
+  cursor: pointer;
+  transform: rotate(180deg);
+  width: 32px !important;
+  height: 32px !important;
+  padding: 11px;
+}
+
+.wellNameExpandIcon:hover {
+  color: var(--palette-primary-text-1) !important;
+}
+
+.hiddenExpandIcon {
+  display: none !important;
+}
+
+.wellNameCollapsed {
+  transform: rotate(0deg);
+}
+
+.settingsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.popperContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px !important;
+  line-height: 24px !important;
+}
+
+.popperButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.popperButton {
+  width: 71px !important;
+  padding: 4px !important;
+  background: rgba(255, 255, 255, 0.24) !important;
+  color: #fff !important;
+}
+
+.popperButton:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}

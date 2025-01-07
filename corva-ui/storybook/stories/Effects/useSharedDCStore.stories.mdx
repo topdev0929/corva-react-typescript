@@ -1,0 +1,75 @@
+<Meta title="Effects/useSharedDCStore" />
+
+# useSharedDCStore
+
+### Description
+
+A hook that allows you to share the data between multiple DC apps. Allows to implement
+communication and synchronization between them.
+
+Main things to know:
+
+- shared store key is a UUID string to prevent possible names clashes. Use services like https://www.uuidgenerator.net/
+  to generate your store key once, store it to some variable with a meaningfull name and use across multiple apps
+- shared store exists for the duration of user session. On user logout - shared state will be cleared
+
+### API
+
+```typescript
+// hook arguments
+type UserSharedDCStoreArguments = [sharedStoreKey: string]; // valid UUID string
+
+// hook returns
+type UseSharedDCStoreReturn = [
+  // current store value
+  hookSharedStore: any,
+
+  // a function that receives a setter function that returns new store value
+  setHookSharedStore: (newStateSetterFn: (oldState: any) => any) => void
+];
+
+const [store, setStore]: UseSharedDCStoreReturn = useSharedDCStore(
+  '87615a70-07f0-4c44-ac08-f0b96a61e2c6'
+);
+```
+
+### Usage example
+
+```javascript
+import { useSharedDCStore } from '@corva/ui/effects';
+
+// generate your store UUID once using services like https://www.uuidgenerator.net/
+const sharedCounterStore = '68dcab65-63c0-4bca-b20d-7c6753617d29';
+
+export function SharedDcStoreDemo() {
+  const [hookSharedStore, setHookSharedStore] = useSharedDCStore(sharedCounterStore);
+
+  return (
+    <fieldset>
+      <legend>SharedDcStoreDemo</legend>
+      <p style={{ fontSize: '2em' }}>
+        {hookSharedStore && JSON.stringify(hookSharedStore, null, '  ')}
+      </p>
+      <fieldset>
+        <legend>type shared store hook value</legend>
+        <input
+          type="text"
+          value={hookSharedStore}
+          onChange={({ target: { value } }) => {
+            setHookSharedStore(() => value);
+          }}
+        />
+        <button
+          onClick={() => {
+            setHookSharedStore(() => ({
+              foo: 'bar',
+            }));
+          }}
+        >
+          set object to store
+        </button>
+      </fieldset>
+    </fieldset>
+  );
+}
+```

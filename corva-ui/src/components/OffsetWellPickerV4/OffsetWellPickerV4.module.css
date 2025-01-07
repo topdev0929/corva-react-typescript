@@ -1,0 +1,153 @@
+.offsetWellDialog {
+  width: 1100px;
+  overflow-y: hidden;
+}
+
+.viewOnlyTitleLabel {
+  margin-left: 40px !important;
+  margin-bottom: 16px !important;
+  font-size: 16px !important;
+  line-height: 140.6% !important;
+  color: var(--palette-primary-text-6);
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden auto;
+  position: relative;
+}
+
+.contentContainer {
+  overflow-y: hidden;
+  padding: 16px 0 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.smallContainer {
+  margin-top: 4px;
+}
+
+.contentContainerMobile {
+  padding-top: 0;
+}
+.content {
+  flex: 1;
+  overflow: auto;
+  position: relative;
+  margin: 0px 24px 0px 40px;
+}
+
+.contentMobile {
+  margin: 0px 0px 0px 16px;
+}
+
+.contentiOSMobile {
+  margin: 0px 16px 0px 16px;
+}
+
+.content::-webkit-scrollbar-corner {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.content::-webkit-scrollbar {
+  width: 16px;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: rgba(164, 164, 167, 0.7215686274509804);
+  border-radius: 10px;
+  border: 5px solid rgba(0, 0, 0, 0.01);
+  background-clip: padding-box;
+}
+
+.modalActions {
+  justify-content: flex-end;
+  box-shadow: none;
+}
+
+.actionsWrapper {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonGap {
+  display: flex;
+  gap: 16px;
+}
+
+.viewOnlyLabel {
+  color: var(--palette-primary-text-6);
+  padding-bottom: 16px;
+  padding-left: 40px;
+}
+
+.countContainer {
+  margin: 0px 0px 16px 40px;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  z-index: 9;
+}
+
+.countContainerMobile {
+  margin-top: 14px;
+  margin-left: 16px;
+}
+
+.totalLabel {
+  color: var(--palette-primary-text-6);
+}
+
+.selectedLabel {
+  color: var(--palette-primary-text-6);
+  padding-left: 16px;
+}
+
+.countValue {
+  padding-left: 8px;
+  color: var(--palette-primary-text-1);
+}
+
+.maxOffsetSize {
+  padding-left: 4px;
+  color: var(--palette-primary-text-6);
+  cursor: default;
+}
+
+.resetButtonMobile {
+  min-width: 40px !important;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.infoIconContainer {
+  height: 40px;
+}
+
+.viewOnlyInfoContainer {
+  padding: 24px 40px 0px;
+}
+
+.infoIcon {
+  color: #dadada;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 10px;
+}
+
+.topGradient {
+  position: absolute;
+  z-index: 3;
+  top: 120px;
+  width: 100%;
+  height: 16px !important;
+  padding: 0px !important;
+  border-bottom: none !important;
+  background-image: linear-gradient(0deg, rgba(65, 65, 65, 0) 0%, #414141 100%);
+}

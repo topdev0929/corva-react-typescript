@@ -1,0 +1,18 @@
+.selectors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 16px;
+}
+
+@media screen and (max-width: 599px) {
+  .selectors {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+.selector {
+  width: 100%;
+  min-width: 170px;
+}

@@ -1,0 +1,101 @@
+<Meta title="Utils/Convert/convertValue" />
+
+# Convert Utils
+
+Convert Utils is a tool for metric data convertioning.
+
+## convertValue
+
+Converts a single value. Returns number – converted value.
+
+### Example
+
+```javascript
+import { convertValue } from '~/utils/convert';
+convertValue(100, 'length', 'ft'); // returns 30.48 (m)
+```
+
+#### Parameters
+
+<div class="param">
+  <div class="code-block small">
+    <i>value: Number</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+<div class="param-description">The value to convert</div>
+
+<div class="param">
+  <div class="code-block small">
+    <i>unitType: String</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+<div class="param-description">The class of unit (see the table below).</div>
+
+<div class="param">
+  <div class="code-block small">
+    <i>from: String</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+<div class="param-description">The specific unit:</div>
+
+| class of unit           |  unit  |
+| ----------------------- | :----: |
+| oilFlowRate             | m3/min |
+| massFlowRate            | kg/min |
+| shortLength             |   mm   |
+| msePressure             |  kPa   |
+| power                   |  watt  |
+| pressure                |  kPa   |
+| chemVolumeConcentration |  l/m3  |
+| length                  |   m    |
+| speed                   |  m/h   |
+| fluidVelocity           | m/min  |
+| volumeFlowRate          | m3/min |
+| density                 | kg/m3  |
+| torque                  |   Nm   |
+| force                   |  kdaN  |
+| chemMassConcentration   | kg/m3  |
+| area                    |   m2   |
+| time                    |  min   |
+| revolutionPerVolume     |  rpl   |
+| massPerLength           |  kg-m  |
+| system                  | metric |
+| anglePerLength          | dp30m  |
+| oil                     |   m3   |
+| angle                   |  deg   |
+| temperature             |   C    |
+| mass                    |   kg   |
+| pressureGradient        | kPa/m  |
+| inversePressure         |  i-pa  |
+| yp                      |   Pa   |
+| current                 |   mA   |
+| massConcentration       |  kg/m  |
+| volume                  |   m3   |
+| lengthPerAngle          | mm/rev |
+| velocity                |  m/h   |
+| voltage                 |   mV   |
+
+<div class="param">
+  <div class="code-block small">
+    <i>to: String</i>
+  </div>
+  <div class="chip">Optional</div>
+  <div class="param-description"></div>
+</div>
+
+<div class="param-description">The unit that the value will be converted to.</div>
+
+<div class="param">
+  <div class="code-block small">
+    <i>precision: Number</i>
+  </div>
+  <div class="chip">Optional</div>
+</div>
+
+<div class="param-description">Default value is 2.</div>

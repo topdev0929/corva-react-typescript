@@ -1,0 +1,13 @@
+.wellPlanFeedItemInfo {
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.wellPlanFeedItemApp {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin-right: 15px;
+  display: inline-block;
+}

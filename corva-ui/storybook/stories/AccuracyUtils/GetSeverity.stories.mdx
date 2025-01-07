@@ -1,0 +1,58 @@
+<Meta title="Utils/Accuracy/getSeverity" />
+
+# Accuracy Utils
+
+Accuracy Utils provide methods for severity calculation (with getting correspond colors that could be used in app UI).
+
+## getSeverity
+
+Returns string value of severity by comparing of passed params (distanceToPlan, severeThreshold, moderateThreshold).
+
+### Example
+
+Create an instance of Accuracy Utils:
+
+```javascript
+import AccuracyUtils from '~/utils/AccuracyUtils';
+const accuracyUtils = new AccuracyUtils();
+```
+
+Calculate severity:
+
+```javascript
+// distanceToPlan >= severeThreshold:
+accuracyUtils.getSeverity(42, 42, 44); // returns 'high'
+```
+
+```javascript
+// distanceToPlan >= moderateThreshold:
+accuracyUtils.getSeverity(42, 43, 42)); // returns 'moderate'
+```
+
+```javascript
+// other cases:
+accuracyUtils.getSeverity(42, 43, 43)); // returns 'low'
+```
+
+#### Parameters
+
+<div class="param">
+  <div class="code-block small">
+    <i>distanceToPlan: Number</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+<div class="param">
+  <div class="code-block small">
+    <i>severeThreshold: Number</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+<div class="param">
+  <div class="code-block small">
+    <i>moderateThreshold: Number</i>
+  </div>
+  <div class="chip">Required</div>
+</div>

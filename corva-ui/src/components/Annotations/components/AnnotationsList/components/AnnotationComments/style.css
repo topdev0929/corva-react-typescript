@@ -1,0 +1,16 @@
+.cAnnotationCommentsList {
+  margin-top: 5px;
+}
+
+.cAnnotationCommentsListItems {
+  margin-bottom: 5px;
+  padding: 0 0 5px 19px;
+}
+
+.cAnnotationCommentsListInput {
+  padding-bottom: 15px;
+}
+
+.cAnnotationCommentsListInput :global(.c-user-mention) {
+  font-size: 14px;
+}

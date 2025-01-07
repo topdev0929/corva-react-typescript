@@ -1,0 +1,35 @@
+.tpLegends {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 8px 16px;
+}
+
+.tpLegendsItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.tpLegendsItem.disabled {
+  pointer-events: none;
+  cursor: default;
+  opacity: .5;
+}
+
+.tpLegendsItemColorbar {
+  width: 20px;
+  height: 8px;
+  margin-right: 5px;
+}
+
+.tpLegendsItemColorcircle {
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  border-radius: 100%;
+}

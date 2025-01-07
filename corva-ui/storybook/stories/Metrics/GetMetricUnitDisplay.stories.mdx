@@ -1,0 +1,32 @@
+<Meta title="Utils/Metrics/getMetricUnitDisplay" />
+
+# Convert Utils
+
+Util for work with metric values.
+
+## getMetricUnitDisplay
+
+Returns formatted unit to display according to provided metric config.
+
+### Example
+
+```javascript
+import { getMetricUnitDisplay } from '~/utils/metrics';
+
+const metricConfig = {
+  formatUnitDisplay,
+  to,
+  unitType,
+}; // some metrics config here
+
+getMetricUnitDisplay(metricConfig); // if to and unitType are not provided – returns ''
+```
+
+#### Parameters
+
+<div class="param">
+  <div class="code-block small">
+    <i>metricsConfig: Object</i>
+  </div>
+  <div class="chip">Required</div>
+</div>

@@ -1,0 +1,9 @@
+.mapContainer {
+  margin-top: 8px;
+  width: 472px;
+}
+
+.mapContainerHidden {
+  margin-top: 20px;
+  display: none;
+}

@@ -1,0 +1,53 @@
+.hideOverflow {
+  overflow: hidden;
+}
+
+.downloadLink {
+  outline: 0;
+  color: inherit;
+}
+
+.mainContainer {
+  padding: 16px 16px 0 24px;
+}
+
+.mainContainerNative{
+  padding: 15px 16px 0 16px;
+}
+
+.mainContainerClickable {
+  cursor: pointer;
+}
+
+.mainContainerTop {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mainContainerTopNative {
+  padding-left: 55px;
+}
+
+.mainContainerTopLine {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.mainContainerTopMenu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.loadingContainer {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

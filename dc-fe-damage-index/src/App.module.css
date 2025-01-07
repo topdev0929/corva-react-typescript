@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 12px 12px 120px 12px;
+}
+
+.content {
+  height: 100%;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}

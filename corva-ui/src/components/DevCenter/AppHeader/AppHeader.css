@@ -1,0 +1,36 @@
+.padModeSelect {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+
+.padModeSelect > div:first-child {
+  padding: 0 !important;
+  margin: 0;
+}
+
+.appMaximized {
+  margin-right: 28px;
+}
+
+.controlsContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.controlsContainer > *:not(:last-child) {
+  padding: 0;
+  margin-right: 16px;
+}
+
+.assetLabels {
+  align-items: center;
+  display: flex;
+  height: 24px;
+}
+
+.assetLabels > *:not(:last-child) {
+  margin-right: 8px;
+}

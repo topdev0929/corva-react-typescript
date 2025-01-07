@@ -1,0 +1,83 @@
+.container {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border: 2px solid var(--palette-background-b-7);
+  border-radius: 4px;
+  padding: 12px 16px;
+  cursor: pointer;
+  position: relative;
+  min-height: 80px;
+}
+
+.container.isMedium {
+  padding: 12px 8px;
+  aspect-ratio: 64 / 80;
+}
+
+.container.isSmall {
+  padding: 12px 6px;
+  aspect-ratio: auto;
+}
+
+.container.isInRange {
+  background-color: rgba(99, 239, 255, 0.05);
+  border: 2px dashed rgba(33, 150, 243, 0.4);
+}
+
+.container.isSelected {
+  background-color: rgba(99, 239, 255, 0.1);
+  border: 2px solid var(--palette-primary-main);
+}
+
+.container:hover {
+  border: 2px solid var(--palette-primary-main);
+}
+
+.container.isToday::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image: url('../../../../assets/today.svg');
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  height: 32px;
+}
+
+.date {
+  margin: 0;
+  font-size: 20px;
+  color: var(--palette-primary-text-1);
+  font-weight: 400;
+}
+
+.month {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--palette-background-b-7);
+  border-radius: 0 0 4px 0;
+  padding: 0 4px 2px 2px;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--palette-primary-text-6);
+  text-transform: capitalize;
+}
+
+.container:hover .month {
+  background-color: var(--palette-primary-main);
+  color: #ffffff;
+}
+
+.isSelected .month {
+  background-color: var(--palette-primary-main);
+  color: #ffffff;
+}

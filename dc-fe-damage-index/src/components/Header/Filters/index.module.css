@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 223px));
+  gap: 24px;
+}
+
+.isMobile {
+  gap: 8px;
+}

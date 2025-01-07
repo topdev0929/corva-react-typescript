@@ -1,0 +1,31 @@
+{
+  "extends": "@tsconfig/create-react-app/tsconfig.json",
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/**/*.stories.js*"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "~/*": [
+        "src/*"
+      ],
+    },
+    // Tells TypeScript to read JS files, as
+    // normally they are ignored as source files
+    "allowJs": true,
+    // Generate d.ts files
+    "declaration": true,
+    // Types should go into this directory.
+    // Removing this would place the .d.ts files
+    // next to the .js files
+    "outDir": "dist",
+    // go to js file when using IDE functions like
+    // "Go to Definition" in VSCode
+    "declarationMap": true,
+    "noEmit": false,
+    "strict": false,
+    "baseUrl": "."
+  },
+}

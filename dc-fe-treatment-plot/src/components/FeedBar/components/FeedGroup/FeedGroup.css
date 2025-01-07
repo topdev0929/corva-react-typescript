@@ -1,0 +1,31 @@
+.feedGroupItemsContainer {
+  padding: 8px;
+  padding-right: 28px;
+}
+
+.feedGroupTypeIcon {
+  height: 60%;
+  width: 60%;
+}
+
+.feedGroupIcon {
+  margin-top: 1px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  background-color: #3b3b3b;
+  color: #bdbdbd;
+}
+
+.feedGroupIconActive,
+.feedGroupIcon:hover {
+  background-color: #616161;
+  color: white;
+}
+
+.feedItemContainer {
+  padding-left: 23px;
+}
+
+.feedGroupAvatar {
+  border: 1px solid #414141;
+}

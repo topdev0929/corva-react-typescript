@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.item {
+  width: 100%;
+  max-width: 289px;
+  cursor: pointer;
+}
+
+.data {
+  width: calc(100% - 44px);
+}
+
+.name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--palette-primary-text-1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.date {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--palette-primary-text-6);
+}

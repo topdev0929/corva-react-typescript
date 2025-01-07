@@ -1,0 +1,31 @@
+name: feat/fix branch flow
+on:
+  push:
+    branches:
+      - feat/*
+      - fix/*
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  feat-fix-flow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: feat/fix flow
+        uses: corva-ai/gh-actions/shared-dc-workflows/feat-fix@develop
+        with:
+          qa-api-key: ${{ secrets.API_KEY_QA }}
+          prod-api-key: ${{ secrets.API_KEY }}
+          prod-app-key: shell.hypercare.ui
+          npm-token: ${{ secrets.CORVA_NPM_TOKEN }}
+          jira-user-email: ${{ secrets.JIRA_AUTOTEST_USERNAME }}
+          jira-api-token: ${{ secrets.JIRA_AUTOTEST_API_TOKEN }}
+      # - name: trigger circle ci branch e2e tests
+      #   run: |
+      #     curl --request POST \
+      #       --url https://circleci.com/api/v2/project/gh/corva-ai/${{ github.event.repository.name }}/pipeline \
+      #       --header 'Circle-Token: ${{ secrets.CIRCLE_CI_API_TOKEN }}' \
+      #       --header 'content-type: application/json' \
+      #       --data '{"branch": "${{ github.ref_name	 }}", "parameters":{"run_branch_e2e_tests_workflow":true,"app_repository_name":"${{ github.event.repository.name }}"}}'

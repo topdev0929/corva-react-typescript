@@ -1,0 +1,17 @@
+name: develop branch flow
+on:
+  push:
+    branches:
+      - 'develop'
+
+jobs:
+  develop-flow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: develop branch flow
+        id: shared-workflow
+        uses: corva-ai/gh-actions/shared-dc-workflows/develop@develop
+        with:
+          qa-api-key: ${{ secrets.API_KEY_QA }}
+          prod-api-key: ${{ secrets.API_KEY }}
+          npm-token: ${{ secrets.CORVA_NPM_TOKEN }}

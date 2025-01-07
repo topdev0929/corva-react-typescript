@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid var(--palette-primary-text-9);
+}
+
+.data {
+  width: calc(100% - 44px);
+}
+
+.name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--palette-primary-text-1);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.date {
+  margin: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--palette-primary-text-6);
+}

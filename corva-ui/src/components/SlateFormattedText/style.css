@@ -1,0 +1,113 @@
+.richTextEditorLinkElement {
+  color: #03bcd4;
+}
+
+.richTextEditorLinkElement:hover {
+  text-decoration: underline;
+}
+
+.richTextEditorPopoverLinkElement {
+  display: flex;
+  vertical-align: middle;
+  margin-top: 1px;
+}
+
+.richTextEditorPopoverLinkElement a {
+  color: #bdbdbd;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.contrastText {
+  color: #ffffff !important;
+}
+
+.textPrimary {
+  color: #bdbdbd !important;
+}
+
+.headerOne {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.headerTwo {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.headerThree {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.body {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.caption {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #bdbdbd;
+}
+
+.code {
+  background-color: #272727;
+  border-radius: 4px;
+  color: #fff;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 4px;
+}
+
+.codeBlock {
+  /* NOTE: !important is used to overrides prismjs theme */
+  background-color: #272727 !important;
+  border-radius: 4px;
+  font-size: 12px !important;
+  margin: 0 0 16px 0 !important;
+  padding: 8px !important;
+}
+
+.invisible {
+  display: none;
+}
+
+.bulletedList {
+  margin-block-start: 0;
+  margin-block-end: 8px;
+  padding-inline-start: 18px;
+}
+
+.numberedList {
+  margin-block-start: 0;
+  padding-inline-start: 18px;
+  margin-block-end: 8px;
+}
+
+.listItem {
+  font-size: 16px;
+  padding-bottom: 8px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.listItemPrimary {
+  color: #bdbdbd;
+}

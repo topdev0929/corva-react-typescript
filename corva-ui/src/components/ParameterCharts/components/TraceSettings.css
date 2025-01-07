@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 0 10px;
+  min-width: 360px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 20px;
+}
+
+.scales {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.line {
+  border-top: 1px solid white;
+  margin-bottom: -1px;
+  width: 100%;
+}
+
+.dotted {
+  border-top: 1px dotted white;
+}
+
+.dashed {
+  border-top: 1px dashed white;
+}

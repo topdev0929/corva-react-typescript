@@ -1,0 +1,35 @@
+<Meta title="Utils/Main/hexToRgbA" />
+
+# Main Utils
+
+Common utils.
+
+## hexToRgbA
+
+Transforms given number to a color (RGBA).
+
+### Example
+
+```javascript
+import utils from '~/utils';
+
+utils.hexToRgbA('#ffffff', 0.27); // returns rgba(255, 255, 255, 0.27)
+```
+
+#### Parameters
+
+<div class="param">
+  <div class="code-block small">
+    <i>hex: Number</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+<div class="param">
+  <div class="code-block small">
+    <i>alpha: Number</i>
+  </div>
+  <div class="chip">Optional</div>
+</div>
+
+<div class="param-description">Default value is 1.</div>

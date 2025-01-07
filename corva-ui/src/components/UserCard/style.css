@@ -1,0 +1,33 @@
+.cUserCardMediaBackdrop {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.cUserCardMediaBackdrop:hover {
+  background-color: rgba(47, 47, 47, 0.25);
+  transition: background-color 100ms linear;
+}
+
+.cUserCardMediaBackdrop:hover .cUserCardMediaBackdropToProfile {
+  display: flex;
+  background-color: #303030;
+  opacity: 0.86;
+  color: #fff;
+  cursor: pointer;
+  width: 92px;
+  height: 32px;
+  justify-content: center;
+  font-family: Roboto;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 200;
+}
+
+.cUserCardMediaBackdropToProfile {
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  display: none;
+}

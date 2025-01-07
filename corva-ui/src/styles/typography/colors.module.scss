@@ -1,0 +1,13 @@
+$text-colors: (
+  t1: var(--palette-primary-text-1),
+  t6: var(--palette-primary-text-6),
+  t7: var(--palette-primary-text-7),
+  t8: var(--palette-primary-text-8),
+  t9: var(--palette-primary-text-9),
+);
+
+@each $color-name, $value in $text-colors {
+  .#{$color-name} {
+    color: $value;
+  }
+}

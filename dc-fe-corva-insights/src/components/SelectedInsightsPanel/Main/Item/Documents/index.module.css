@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.item {
+  width: 100%;
+  max-width: 289px;
+  cursor: pointer;
+}

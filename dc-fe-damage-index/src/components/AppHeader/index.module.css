@@ -1,0 +1,30 @@
+.header {
+  display: grid;
+  grid-template-columns: min-content min-content auto;
+  align-items: center;
+  padding-bottom: 8px;
+}
+
+.headerLogo {
+  object-fit: contain;
+  width: 9rem;
+}
+
+.headerSplit {
+  width: 1px;
+  height: 16px;
+  background-color: var(--palette-primary-text-9);
+  margin: 0 1.25rem;
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.headerSubtitle {
+  color: var(--palette-primary-text-6);
+  font-size: 0.75rem;
+}

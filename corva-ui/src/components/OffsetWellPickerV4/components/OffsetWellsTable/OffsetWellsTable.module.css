@@ -1,0 +1,97 @@
+.offsetWellsTable {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.loadingContainer {
+  position: absolute;
+  z-index: 1500;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.stickyTable {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background-color: var(--palette-background-b-9);
+}
+
+.searchCell {
+  position: sticky;
+  width: 1020px;
+  left: 0px;
+  top: 49px;
+  z-index: 9;
+  background-color: var(--palette-background-b-9);
+}
+
+.bodyTable {
+  position: relative;
+}
+
+.bodyGrid {
+  overflow: hidden !important;
+  margin-top: 12px !important;
+}
+
+.bodyGrid::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
+
+.loadingCell {
+  height: 16px !important;
+  padding: 0px !important;
+  border-bottom: none !important;
+  text-align: center !important;
+  font-size: 12px !important;
+  color: var(--palette-primary-text-8) !important;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topShadow {
+  position: sticky;
+  z-index: 999;
+  top: 93px;
+  width: 100%;
+  height: 16px !important;
+  padding: 0px !important;
+  border-bottom: none !important;
+  background-image: linear-gradient(0deg, rgba(65, 65, 65, 0) 0%, #414141 100%);
+}
+
+.viewOnlyShadow {
+  top: 49px;
+}
+
+.bottomShadow {
+  position: sticky;
+  z-index: 999;
+  bottom: 0;
+  width: 100%;
+  height: 16px !important;
+  padding: 0px !important;
+  border-bottom: none !important;
+}
+
+.bottomShadow::after {
+  content: ' ';
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 16px !important;
+  background-image: linear-gradient(180deg, rgba(65, 65, 65, 0) 0%, #414141 100%);
+}
+
+.wellNameFixed {
+  box-shadow: rgb(25 25 25) 4px 0px 6px -3px !important;
+}
+
+.noShadow {
+  box-shadow: none !important;
+}

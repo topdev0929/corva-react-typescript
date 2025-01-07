@@ -1,0 +1,52 @@
+.input {
+  width: 100%;
+}
+
+.inputTextField {
+  width: 100%;
+  min-height: 120px;
+  background: #4d4d4d;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 8px 6px !important;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.inputTextFieldSmaller {
+  min-height: 77px;
+  height: 77px;
+}
+
+/* To style react-mentions elements inside the input */
+.inputTextFieldSmaller div[class^='style_mention'] {
+  z-index: 1;
+  max-height: 47px;
+}
+
+.inputTextFieldSmaller .inputInput {
+  height: 30px;
+}
+
+.inputTextField:focus-within {
+  box-shadow: inset 0 0 0 2px #03bcd4;
+}
+
+.inputAdornment {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  margin: 0 16px;
+  justify-content: flex-end;
+}
+
+.inputAdornmentSmaller {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+}
+
+.input :global(.MuiInputBase-root) {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,77 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 16px;
+}
+
+.maximized {
+  flex-direction: row;
+}
+
+.tablet {
+  flex-direction: row;
+}
+
+.tabletSm {
+  flex-direction: column;
+}
+
+.mobile {
+  flex-direction: column;
+}
+
+.fullScreen {
+  display: block;
+}
+
+.block {
+  border-radius: 8px;
+  background-color: var(--palette-background-b-5);
+  padding: 24px 16px;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: auto;
+  min-width: 360px;
+  padding: 16px 8px 16px 0;
+}
+
+.fullScreen .block {
+  display: none;
+}
+
+.currentIndex {
+  padding: 24px;
+}
+
+.currentIndexSm {
+  min-height: 432px;
+}
+
+.currentIndexMobile {
+  min-height: 432px;
+}
+
+.deltaChange {
+  grid-area: change;
+}
+
+.recommendedBounds {
+  grid-area: recommend;
+}
+
+.lineChart {
+  grid-area: chart;
+  padding: 0;
+  background-color: transparent;
+}
+
+.fullScreen .lineChart {
+  display: block;
+}

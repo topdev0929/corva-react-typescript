@@ -1,0 +1,64 @@
+<Meta title="Utils/Convert/getUnitPreference" />
+
+# Convert Utils
+
+Convert Utils is a tool for metric data convertioning.
+
+## getUnitPreference
+
+Retrieves a unit of a given type by current unit system. Returns String.
+
+### Example
+
+```javascript
+import { getUnitPreference } from '~/utils/convert';
+getUnitPreference('oilFlowRate'); // returns 'bbl/min';
+```
+
+#### Parameters
+
+<div class="param">
+  <div class="code-block small">
+    <i>unitType: String</i>
+  </div>
+  <div class="chip">Required</div>
+</div>
+
+The class of unit:
+
+| class of unit           |  unit  |
+| ----------------------- | :----: |
+| oilFlowRate             | m3/min |
+| massFlowRate            | kg/min |
+| shortLength             |   mm   |
+| msePressure             |  kPa   |
+| power                   |  watt  |
+| pressure                |  kPa   |
+| chemVolumeConcentration |  l/m3  |
+| length                  |   m    |
+| speed                   |  m/h   |
+| fluidVelocity           | m/min  |
+| volumeFlowRate          | m3/min |
+| density                 | kg/m3  |
+| torque                  |   Nm   |
+| force                   |  kdaN  |
+| chemMassConcentration   | kg/m3  |
+| area                    |   m2   |
+| time                    |  min   |
+| revolutionPerVolume     |  rpl   |
+| massPerLength           |  kg-m  |
+| system                  | metric |
+| anglePerLength          | dp30m  |
+| oil                     |   m3   |
+| angle                   |  deg   |
+| temperature             |   C    |
+| mass                    |   kg   |
+| pressureGradient        | kPa/m  |
+| inversePressure         |  i-pa  |
+| yp                      |   Pa   |
+| current                 |   mA   |
+| massConcentration       |  kg/m  |
+| volume                  |   m3   |
+| lengthPerAngle          | mm/rev |
+| velocity                |  m/h   |
+| voltage                 |   mV   |

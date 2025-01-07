@@ -1,0 +1,13 @@
+.avatar {
+  position: absolute;
+  top: 10px;
+  left: -16px;
+}
+
+.type {
+  width: 18px;
+  position: absolute;
+  bottom: -8px;
+  right: -5px;
+  backdrop-filter: blur(1px);
+}

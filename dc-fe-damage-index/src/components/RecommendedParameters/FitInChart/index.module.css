@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+  width: 64px;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.75) 0%,
+    rgba(255, 202, 0, 0.75) 20%,
+    rgba(66, 255, 0, 0.75) 50%,
+    rgba(255, 202, 0, 0.75) 80%,
+    rgba(255, 0, 0, 0.75) 100%
+  );
+  border-radius: 4px;
+}
+
+.value {
+  position: absolute;
+  width: 0;
+  height: 14px;
+  top: -4.5px;
+  left: 0;
+  border: 1px solid var(--palette-primary-text-1);
+}

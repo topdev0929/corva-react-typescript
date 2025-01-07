@@ -1,0 +1,73 @@
+.containerLarge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerLargeTopright {
+  display: flex;
+  align-items: center;
+}
+
+.containerMedium {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerMediumTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerMediumTopright {
+  display: flex;
+  align-items: center;
+}
+
+.containerMediumBottom {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.containerMediumBottom > div {
+  margin-bottom: 8px;
+}
+
+.containerSmall {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerSmallTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.containerSmallMiddle {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.containerSmallBottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.containerPopper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.containerPopper > div {
+  margin-bottom: 16px;
+}
+
+.containerButtonsWrapper {
+  display: flex;
+}
